@@ -1,0 +1,831 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoran Gjuroski</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Lato:400,300,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:700,400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/content/bootstrap.min.css" />
+    <link rel="stylesheet" href="/content/site.css" />
+    <link rel="stylesheet" href="/content/responsive.css" />
+    <link rel="stylesheet" href="/content/font-awesome.min.css" />
+    <script type="text/javascript" src="/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="contentWrap">
+                <div id="content">
+                    <div id="upper">
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div id="profileImg" class="col-sm-4">
+                                    <img style="width: 95%; height: 190px;" class="img-responsive img-thumbnail" src="/Content/images/profile1.jpg" />
+                                </div>
+                                <div class="col-sm-8">
+                                    <h2 id="titleName">
+                                        Zoran <br /> Gjuroski
+                                    </h2>
+                                    <h3 id="titlePosition">SOFTWARE ENGINEER</h3>
+                                    <div id="titleActions">
+                                        <button type="button" class="btn btn-s" onclick="download()"><i class="fa fa-download"></i> Download</button>
+                                        <button type="button" class="btn btn-s" onclick="contact()"><i class="fa fa-info"></i> Contact</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="upperMenu" class="col-lg-4">
+                            <ul id="menu" class="pull-right">
+                                <li><a id="mDefault" href="index.html">INFORMATION /</a></li>
+                                <li><a id="mPortfolio" class="current" href="portfolio.html">PORTFOLIO /</a></li>
+                                <li><a id="mContact" href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="portfolio" class="resume-section">
+                        <div>
+                            <span class="portfolio-category active" data-group="all">Show all</span>
+                            <span class="portfolio-category" data-group="web">Web design</span>
+                            <span class="portfolio-category" data-group="webd">Web development</span>
+                            <span class="portfolio-category" data-group="desktop">Desktop apps</span>
+                        </div>
+                        <div id="itemsList">
+                            <div class="portfolio-item all desktop col-md-3" data-projid="1" data-groups='["0", "3"]'>
+                                <a role="button">
+                                    <div class="portfolio-item-image"></div>
+                                    <div class="portfolio-item-desc">
+                                        <h6>KnigW</h6>
+                                        <p> Desktop appication</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all web col-md-3" data-projid="2" data-groups='["0", "1"]'>
+                                <a role="button">
+                                    <img src="/Content/images/2/0.png" class="portfolio-item-image" alt="project image">
+                                    <div class="portfolio-item-desc">
+                                        <h6>Markoskik73 </h6>
+                                        <p> Website </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all web col-md-3" data-projid="3" data-groups='["0", "2"]'>
+                                <a role="button">
+                                    <img src="/Content/images/3/0.png" class="portfolio-item-image">
+                                    <div class="portfolio-item-desc">
+                                        <h6> SRIS </h6>
+                                        <p> Web application </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all webd col-md-3" data-projid="4" data-groups='["0", "2"]'>
+                                <a role="button">
+                                    <img src="/Content/images/4/0.png" class="portfolio-item-image">
+                                    <div class="portfolio-item-desc">
+                                        <h6>DenDiet</h6>
+                                        <p> Web application </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all webd col-md-3" data-projid="5" data-groups='["0", "3"]'>
+                                <a role="button">
+                                    <img src="/Content/images/5/0.png" class="portfolio-item-image">
+                                    <div class="portfolio-item-desc">
+                                        <h6>Electronic Services Framework</h6>
+                                        <p> Web application </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all desktop col-md-3" data-projid="6" data-groups='["0", "2"]'>
+                                <a role="button">
+                                    <img src="/Content/images/6/0.png" class="portfolio-item-image">
+                                    <div class="portfolio-item-desc">
+                                        <h6>Electronic Archive</h6>
+                                        <p> Desktop application </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all webd col-md-3" data-projid="7" data-groups='["0", "2"]'>
+                                <a role="button">
+                                    <div class="portfolio-item-image"></div>
+                                    <div class="portfolio-item-desc">
+                                        <h6>Coke SAM</h6>
+                                        <p> Web API </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all webd col-md-3" data-projid="8" data-groups='["0", "2"]'>
+                                <a role="button">
+                                    <img src="/Content/images/8/0.png" class="portfolio-item-image">
+                                    <div class="portfolio-item-desc">
+                                        <h6>[CRP] - Configuration portal</h6>
+                                        <p> Web application </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all webd col-md-3" data-projid="9" data-groups='["0", "2"]'>
+                                <a role="button">
+                                    <img src="/Content/images/9/0.png" class="portfolio-item-image">
+                                    <div class="portfolio-item-desc">
+                                        <h6>ePermit Serbia</h6>
+                                        <p> Web application </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all webd col-md-3" data-projid="10" data-groups='["0", "2"]'>
+                                <a role="button">
+                                    <img src="/Content/images/10/0.png" class="portfolio-item-image">
+                                    <div class="portfolio-item-desc">
+                                        <h6>[CRP] - Support tool</h6>
+                                        <p> Web application </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all webd col-md-3" data-projid="11" data-groups='["0", "2"]'>
+                                <a role="button">
+                                    <img src="/Content/images/11/0.png" class="portfolio-item-image">
+                                    <div class="portfolio-item-desc">
+                                        <h6>Sara fashion eOrders</h6>
+                                        <p> Web application </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all webd col-md-3" data-projid="12" data-groups='["0", "1"]'>
+                                <a role="button">
+                                    <img src="/Content/images/12/0.png" class="portfolio-item-image">
+                                    <div class="portfolio-item-desc">
+                                        <h6>TheTowawayZone</h6>
+                                        <p> Web application </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="portfolio-item all web col-md-3" data-projid="13" data-groups='["0", "1"]'>
+                                <a role="button">
+                                    <img src="/Content/images/13/0.gif" class="portfolio-item-image">
+                                    <div class="portfolio-item-desc">
+                                        <h6>Kindergarten site</h6>
+                                        <p> Website </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <div class="project" data-id="1">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/project.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>KnigW</h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        Making updates and enhancements in the code and the database tables of an existing system.
+                                        Creating operations to communicate with FTP server and write/read/update files, and creating application module for generating XML reports for the companies which use the system (several company types).
+                                        Visual Basic, XML.
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="project" data-id="2">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/2/0.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/2/1.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/2/2.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/2/3.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>Markoskik73 </h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        It represents a static website for the needs of the company MarkoskiK73 (civil engineering and constructions).
+                                        The website is (mobile-first) responsive. HTML, CSS, PHP (contact), Bootstrap.
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="project" data-id="3">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/3/0.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/3/2.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/3/3.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/3/4.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/3/5.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/3/6.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/3/7.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/3/8.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>SRIS</h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        A system (web application) that aims to support, facilitate and accelerate the processes of supervision of the capital market in the country.
+                                        It is made of a module for corporate finance which analyses the data received from The Macedonian Stock Exchange and the Central Depository of Securities,
+                                        and a module that represents a segment of the application used for supervision of management companies of investment funds.
+                                        ASP.NET MVC, WCF, jQuery, Bootstrap
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                    <button type="button" class="btn btn-info">
+                                        <i class="fa fa-external-link"></i> Visit website
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="project" data-id="4">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/4/0.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/4/1.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/4/3.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/4/4.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/4/5.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/4/6.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>DenDiet </h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        Dynamics Energy Nutrition is a system that needs the client services and consultancy from professional doctors - nutritionists.
+                                        The main goal is for patients to lose weight and to lead a healthy life.
+                                        The application consist of three areas - public for not lot logged in users, administration for the nutritionists and patient area.
+                                        The admin application includes patient management, applications management where they can approve/accept patient applications, applications history, chat, etc.
+                                        The patient application is the patient's profile and there the patient inserts his measurements, views the food menus sent from the doctor, chats,
+                                        and sends tracking forms about his health when needed.
+                                        ASP.NET MVC, Entity framework, KnockoutJS, jQuery, Bootstrap
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                    <button type="button" class="btn btn-info">
+                                        <i class="fa fa-external-link"></i> Visit website
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="project" data-id="5">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/5/0.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/5/1.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/5/2.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>Electronic Services Framework</h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        Framework for electronic services, designed to provide the end users configured catalogs with services,
+                                        and administration which includes content management and report generation.
+                                        Created with: ASP.NET WebForms and MVC, Entity framework
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                    <button type="button" class="btn btn-info">
+                                        <i class="fa fa-external-link"></i> Visit website
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="project" data-id="6">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/6/0.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/6/1.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/6/2.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>Electronic Archive</h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        e-Archive is a system that is used for archiving documents. It represents a desktop
+                                        application created with Windows Presentation Foundation (WPF) that allows the archivist to
+                                        manage companies that have their own separate archives. The application is created following the
+                                        principles and laws on archiving imposed by the Government of Macedonia.
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <a class="btn btn-theme" href="#somelink"><i class="fa fa-external-link"></i>Visit Website</a>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="project" data-id="7">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/project.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>Coke SAM</h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        – Project that includes two parts: web API that is used through mobile devices for sharing
+                                        coupons and messages for McDonald’s meals, and an administration portal for user/coupon/messages/files management.
+                                        Created with ASP.NET Web API, Entity Framework, Bootstrap
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                    <button type="button" class="btn btn-info">
+                                        <i class="fa fa-external-link"></i> Visit website
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="project" data-id="8">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/8/0.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/8/1.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/8/2.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/8/3.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/8/4.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/8/5.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>[CRP] - Configuration portal</h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        CRP (Core registry platform) – Generic framework for registers and business processes.
+                                        It represents a big platform which contains web application for configuring metadata about new registration systems through creating dynamic
+                                        database model – entities, properties, relationships, business roles, roles, organizations, documents, validation rules,
+                                        and configuring business processes with activities, actions, notifications.
+                                        The configured metadata is published and used from other web application from the end user who
+                                        fills in the needed data in the configured processes/activities.
+                                        The platform also includes: BPM tool, web application for supervision and support, business rule component,
+                                        workflow manager, document management system etc.
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                    <button type="button" class="btn btn-info">
+                                        <i class="fa fa-external-link"></i> Visit website
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="project" data-id="9">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/9/0.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/1.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/2.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/3.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/4.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/5.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/6.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/7.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/8.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/9.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/10.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/11.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/9/12.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>ePermit Serbia</h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        [CRP instance]. System for issuing construction permits in Serbia.
+                                        It includes all needed processes for construction: submitting application for location conditions,
+                                        obtaining all kinds of permits from the needed institutions, approval of works, etc.
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                    <button type="button" class="btn btn-info">
+                                        <i class="fa fa-external-link"></i> Visit website
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="project" data-id="10">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/10/0.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/10/1.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/10/2.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/10/3.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/10/4.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/10/5.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>[CRP] - Support tool</h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        CRP (Core registry platform) – Generic framework for registers and business processes.
+                                        It represents a big platform which contains web application for configuring metadata about new registration systems through creating dynamic
+                                        database model – entities, properties, relationships, business roles, roles, organizations, documents, validation rules,
+                                        and configuring business processes with activities, actions, notifications.
+                                        The configured metadata is published and used from other web application from the end user who
+                                        fills in the needed data in the configured processes/activities.
+                                        The platform also includes: BPM tool, web application for supervision and support, business rule component,
+                                        workflow manager, document management system etc.
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                    <button type="button" class="btn btn-info">
+                                        <i class="fa fa-external-link"></i> Visit website
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="project" data-id="11">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/11/0.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/11/1.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/11/2.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/11/3.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>Sara fashion eOrders</h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        Web application for electronic orders created with Microsoft technologies.
+                                        Includes filling shopping cart with products from various categories and creating orders with articles.
+                                        ADO.NET, ASP.NET MVC, MSSQL.
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                    <button type="button" class="btn btn-info">
+                                        <i class="fa fa-external-link"></i> Visit website
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="project" data-id="12">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/12/0.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/12/1.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/12/2.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/12/3.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/12/4.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/12/5.png" alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="/Content/images/12/6.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>TheTowawayZone</h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        Web application for towing companies that provides various features for vehicle impound activities including:
+                                        vehicle impound, calculating fees for impounded vehicle, vehicle reports, user and role management, managing
+                                        vehicles on sale, progress bar and deadline calculator feature for impounded vehicles.
+                                        ASP.NET MVC 6, Entity framework 6, KnockoutJS.
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                    <button type="button" class="btn btn-info" onclick="location.href = 'http://thetowawayzone.com/public'">
+                                        <i class="fa fa-external-link"></i> Visit website
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="project" data-id="13">
+                            <div class="left-col">
+                                <img src="/Content/images/monitor.png" class="gallery-holder" />
+                                <div class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="/Content/images/13/1.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <h1>Kindergarten site</h1>
+                                <div class="project-descr">
+                                    <p class="clearfix">
+                                        /
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="text-center">
+                                    <button type="button" class="btn btn-default">
+                                        <i class="fa fa-times"></i> Close
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="dialog" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close proj-action prev"><i class="fa fa-arrow-left"></i></button>
+                            <button type="button" class="close proj-action exit" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+                            <button type="button" class="close proj-action next"><i class="fa fa-arrow-right"></i></button>
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="quickContactWrap" class="sidebar">
+            <div class="sidebar-box">
+                <div id="quickLinkForm">
+                    <form novalidate>
+                        <div class="form-group">
+                            <h4>Contact form</h4>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" data-rule-required="true" placeholder="Name..." />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="address" name="address" class="form-control" data-rule-required="true" placeholder="Subject..." />
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-control" rows="5" data-rule-required="true" placeholder="Message..."></textarea>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <button type="button" class="btn btn-info" onclick="sendMessage()">Save</button>
+                        </div>
+                        <div id="msgSuccess">
+                            <span class="fa fa-check" style="background: #3c763d; color: #fff;"></span>
+                            <div>Your message has been sent successfully.</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="sidebar-icon">
+                    <i class="fa fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="scrollTop" class="action-btn"><i class="fa fa-arrow-up"></i></span>
+    <span id="download" class="action-btn" onclick="download()"><i class="fa fa-download"></i></span>
+
+    <script type="text/javascript" src="/scripts/ui.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            init();
+            $(".portfolio-item").click(function () {
+                var id = $(this).data('projid');
+                projectDetails(id);
+            });
+
+            var $grid = $('#itemsList').isotope({
+                itemSelector: '.portfolio-item',
+                layoutMode: 'fitRows'
+            });
+
+            $(".portfolio-category").click(function () {
+                $(".portfolio-category.active").removeClass('active');
+                $(this).addClass('active');
+
+                var categoryId = $(this).data('group');
+                if (categoryId == 'all') {
+                    $grid.isotope({ filter: '*' });
+                } else {
+                    $grid.isotope({ filter: '.' + categoryId });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

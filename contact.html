@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoran Gjuroski</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Lato:400,300,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:700,400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/content/bootstrap.min.css" />
+    <link rel="stylesheet" href="/content/site.css" />
+    <link rel="stylesheet" href="/content/responsive.css" />
+    <link rel="stylesheet" href="/content/font-awesome.min.css" />
+    <script type="text/javascript" src="/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="contentWrap">
+                <div id="content">
+                    <div id="upper">
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div id="profileImg" class="col-sm-4">
+                                    <img style="width: 95%; height: 190px;" class="img-responsive img-thumbnail" src="/Content/images/profile1.jpg" />
+                                </div>
+                                <div class="col-sm-8">
+                                    <h2 id="titleName">
+                                        Zoran <br /> Gjuroski
+                                    </h2>
+                                    <h3 id="titlePosition">SOFTWARE ENGINEER</h3>
+                                    <div id="titleActions">
+                                        <button type="button" class="btn btn-s" onclick="download()"><i class="fa fa-download"></i> Download</button>
+                                        <button type="button" class="btn btn-s" onclick="contact()"><i class="fa fa-info"></i> Contact</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="upperMenu" class="col-lg-4">
+                            <ul id="menu" class="pull-right">
+                                <li><a id="mDefault" href="index.html">INFORMATION /</a></li>
+                                <li><a id="mPortfolio" href="portfolio.html">PORTFOLIO /</a></li>
+                                <li><a id="mContact" class="current" href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="contact" class="resume-section">
+                        <div class="col-md-8">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed neque diam. Donec eleifend, nunc et sodales
+                                tincidunt, eros risus pellentesque ante, non tincidunt metus tortor eget sem. Sed aliquet tempus est, sed bibendum
+                                arcu volutpat sit amet. Nam at mollis neque, quis eleifend leo.
+                            </p>
+                            <form class="fixed" id="contactForm" novalidate="novalidate">
+                                <fieldset>
+                                    <div id="formstatus"></div>
+                                    <input class="col-md-12" id="cname" type="text" name="cname" value="" placeholder="Enter your name here" data-rule-required="true">
+                                    <input class="col-md-12" id="cemail" type="text" name="cemail" value="" placeholder="Email address" data-rule-required="true">
+                                    <input class="col-md-12" id="csubject" type="text" name="csubject" value="" placeholder="Subject" data-rule-required="true">
+                                    <textarea class="col-md-12" id="cmessage" name="cmessage" rows="6" cols="25" placeholder="Message" data-rule-required="true"></textarea>
+                                    <div class="clearfix"></div>
+                                    <div>
+                                        <input type="submit" class="btn btn-s" onclick="sendContactMsg()" value="Send!">
+                                    </div>
+                                    <div id="msgSuccess">
+                                        <span class="fa fa-check" style="background: #3c763d; color: #fff;"></span>
+                                        <div>Your message has been sent successfully.</div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="social-media fixed">
+                                <a href="#" class="facebook-icon social-icon">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter-icon social-icon">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="googleplus-icon social-icon">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                                <a href="#" class="linkedin-icon social-icon">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+
+                            <address>
+                                1234 Some Adress, Nashville<br>
+                                TN 305, United States of America<br>
+                                Tel: +1 234 567 8910<br>
+                                E-mail: <a href="mailto:mail@yoursitename.com">mail@yoursitename.com</a>
+                            </address>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="dialog" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close proj-action prev"><i class="fa fa-arrow-left"></i></button>
+                            <button type="button" class="close proj-action exit" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+                            <button type="button" class="close proj-action next"><i class="fa fa-arrow-right"></i></button>
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="quickContactWrap" class="sidebar">
+            <div class="sidebar-box">
+                <div id="quickLinkForm">
+                    <form novalidate>
+                        <div class="form-group">
+                            <h4>Contact form</h4>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" data-rule-required="true" placeholder="Name..." />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="address" name="address" class="form-control" data-rule-required="true" placeholder="Subject..." />
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-control" rows="5" data-rule-required="true" placeholder="Message..."></textarea>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <button type="button" class="btn btn-info" onclick="sendMessage()">Save</button>
+                        </div>
+                        <div id="msgSuccess">
+                            <span class="fa fa-check" style="background: #3c763d; color: #fff;"></span>
+                            <div>Your message has been sent successfully.</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="sidebar-icon">
+                    <i class="fa fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="scrollTop" class="action-btn"><i class="fa fa-arrow-up"></i></span>
+    <span id="download" class="action-btn" onclick="download()"><i class="fa fa-download"></i></span>
+
+    <script type="text/javascript" src="/scripts/ui.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            init();
+            $("#contactForm").validate();
+        });
+
+        function sendContactMsg() {
+            if ($("#contactForm").valid()) {
+                var msg = {
+                    Name: $("#cname").val(),
+                    Subject: $("#csubject").val(),
+                    Address: $("#cemail").val(),
+                    Message: $("#cmessage").val()
+                };
+
+                sendMessage(msg);
+            }
+        }
+    </script>
+</body>
+</html>
