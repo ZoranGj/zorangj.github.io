@@ -69,30 +69,31 @@ function sendMessage(data) {
         };
     }
 
-    $.ajax({
-        method: "post",
-        url: "/sendemail",
-        dataType: "json",
-        data: data,
-        success: function (content) {
-            $("#msgSuccess").show();
-            setTimeout(function() {
-                $("#msgSuccess").hide();
-            }, 10000);
-        },
-        error: function(er) {
-            $("#msgSuccess").show();
-            setTimeout(function() {
-                $("#msgSuccess").hide();
-            }, 10000);
-        }
-    });
+    //$.ajax({
+    //    method: "post",
+    //    url: "/sendemail",
+    //    dataType: "json",
+    //    data: data,
+    //    success: function (content) {
+    //        $("#msgSuccess").show();
+    //        setTimeout(function() {
+    //            $("#msgSuccess").hide();
+    //        }, 10000);
+    //    },
+    //    error: function(er) {
+    //        $("#msgSuccess").show();
+    //        setTimeout(function() {
+    //            $("#msgSuccess").hide();
+    //        }, 10000);
+    //    }
+    //});
 }
 
 function download() {
-    location.href = '/downloadcv';
+    var url = "/images/[CV]ZoranGjuroski.pdf";
+    window.open(url, '_blank');
 }
 
 function contact() {
-    location.href = '/contact';
+    location.href = 'contact.html';
 }

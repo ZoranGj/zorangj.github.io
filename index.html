@@ -36,7 +36,7 @@
                                     </h2>
                                     <h3 id="titlePosition">SOFTWARE ENGINEER</h3>
                                     <div id="titleActions">
-                                        <button type="button" class="btn btn-s" onclick="download()"><i class="fa fa-download"></i> Download</button>
+                                        <button type="button" class="btn btn-s" onclick="download()"><i class="fa fa-download"></i> CV</button>
                                         <button type="button" class="btn btn-s" onclick="contact()"><i class="fa fa-info"></i> Contact</button>
                                     </div>
                                 </div>
@@ -55,7 +55,6 @@
                             <h3 class="resume-section-title">Personal information</h3>
                             <div class="resume-item">
                                 <ul id="personalInfo">
-                                    <li>Name: Zoran Gjuroski</li>
                                     <li>Date of birth: 10.03.1992</li>
                                     <li>Nationality: Macedonian</li>
                                     <li>Address: Gjuro Salaj 10 b</li>
@@ -208,55 +207,55 @@
                                 <div class="bar-wrap">
                                     <h4 class="title">C#</h4>
                                     <div class="bar">
-                                        <div class="progress-bar" style="width: 90%;"></div>
+                                        <div class="progress-bar" style="width: 85%;"></div>
                                     </div>
                                 </div>
                                 <div class="bar-wrap">
                                     <h4 class="title">Java</h4>
                                     <div class="bar">
-                                        <div class="progress-bar" style="width: 42%;"></div>
+                                        <div class="progress-bar" style="width: 40%;"></div>
                                     </div>
                                 </div>
                                 <div class="bar-wrap">
                                     <h4 class="title">SQL</h4>
                                     <div class="bar">
-                                        <div class="progress-bar" style="width: 75%;"></div>
+                                        <div class="progress-bar" style="width: 70%;"></div>
                                     </div>
                                 </div>
                                 <div class="bar-wrap">
                                     <h4 class="title">Javascript</h4>
                                     <div class="bar">
-                                        <div class="progress-bar" style="width: 92%;"></div>
+                                        <div class="progress-bar" style="width: 87%;"></div>
                                     </div>
                                 </div>
                                 <div class="bar-wrap">
                                     <h4 class="title">HTML</h4>
                                     <div class="bar">
-                                        <div class="progress-bar" style="width: 97%;"></div>
+                                        <div class="progress-bar" style="width: 94%;"></div>
                                     </div>
                                 </div>
                                 <div class="bar-wrap">
                                     <h4 class="title">CSS</h4>
                                     <div class="bar">
-                                        <div class="progress-bar" style="width: 87%;"></div>
+                                        <div class="progress-bar" style="width: 81%;"></div>
                                     </div>
                                 </div>
                                 <div class="bar-wrap">
                                     <h4 class="title">Bootstrap</h4>
                                     <div class="bar">
-                                        <div class="progress-bar" style="width: 89%;"></div>
+                                        <div class="progress-bar" style="width: 91%;"></div>
                                     </div>
                                 </div>
                                 <div class="bar-wrap">
                                     <h4 class="title">ASP.NET MVC</h4>
                                     <div class="bar">
-                                        <div class="progress-bar" style="width: 94%;"></div>
+                                        <div class="progress-bar" style="width: 90%;"></div>
                                     </div>
                                 </div>
                                 <div class="bar-wrap">
                                     <h4 class="title">jQuery</h4>
                                     <div class="bar">
-                                        <div class="progress-bar" style="width: 90%;"></div>
+                                        <div class="progress-bar" style="width: 80%;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -266,18 +265,20 @@
                                 </h3>
                                 <div class="tag-items">
                                     <span>Microsoft SQL Server</span>
-                                    <span>MySQL</span>
-                                    <span>Microsoft Visual Studio 2012 / 2013</span>
+                                    <span>Dapper</span>
+                                    <span>Microsoft Visual Studio</span>
                                     <span>WebStorm</span>
                                     <span>Netbeans</span>
-                                    <span>Team foundation server, Git(+TortoiseGit)</span>
+                                    <span>Team foundation server</span>
+                                    <span>Git(+TortoiseGit)</span>
                                     <span>AngularJS</span>
                                     <span>KnockoutJS</span>
-                                    <span>Entity Framework (6.0)</span>
+                                    <span>Entity Framework</span>
                                     <span>LINQ</span>
                                     <span>ASP.NET</span>
                                     <span>XML</span>
                                     <span>AJAX</span>
+                                    <span>SignalR</span>
                                     <span>ASP.NET Web API</span>
                                     <span>WPF (Caliburn Micro)</span>
                                 </div>
@@ -287,10 +288,10 @@
                                     <strong>Other skills</strong>
                                 </h3>
                                 <ul>
+                                    <li>Team leadership skills: acquired through leading several team projects, writing and allocating project tasks to other team members (on Team Foundation Server), configuring projects and setting initial project architecture including variations of N-Tier architecture.</li>
                                     <li>Excellent ability to adapt to cultural environment</li>
                                     <li>Excellent communication skills, fast learning and pro-active</li>
-                                    <li>Very dedicated to team work, loyal and organized, hard working</li>
-                                    <li>Team leadership skills: acquired through leading several team projects, writing and allocating project tasks to other team members, configuring projects and setting initial project architecture.</li>
+                                    <li>Very dedicated to team work, loyal and organized - using tools for every type of work, hard working</li>
                                 </ul>
                             </div>
                         </div>
@@ -331,9 +332,10 @@
                             <textarea id="message" name="message" class="form-control" rows="5" data-rule-required="true" placeholder="Message..."></textarea>
                         </div>
                         <div class="form-group" style="margin-bottom: 0;">
-                            <button type="button" class="btn btn-info" onclick="sendMessage()">Save</button>
+                            <button type="button" class="btn btn-info disabled" onclick="sendMessage()">Save</button>
                         </div>
-                        <div id="msgSuccess">
+                        <p style="font-size: 13px;"><small><span class='text-danger'>* Note:</span> The project's location (github) is temporary and the contact form will be non-functional until it's move to another hosting space. Please send your messages to <strong>zoran.gjuroski@gmail.com</strong></small></p>
+                        <div id="msgSuccess" class="hidden">
                             <span class="fa fa-check" style="background: #3c763d; color: #fff;"></span>
                             <div>Your message has been sent successfully.</div>
                         </div>
