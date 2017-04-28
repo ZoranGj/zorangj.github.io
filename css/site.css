@@ -371,13 +371,13 @@ a {
 }
 
 .modal-body .left-col {
-    width: 55%;
+    width: 68%;
     margin: 0 25px 20px 0;
     position: relative;
 }
 
 .modal-body .right-col{
-    width: 41%;
+    width: 22%;
     padding-left: 40px;
 }
 
@@ -431,7 +431,7 @@ a {
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
     width: 100%;
-    height: 303px;
+    height: 374px;
 }
 
 .modal-body .carousel {
@@ -440,6 +440,8 @@ a {
 
 .gallery-holder {
     position: absolute;
+    width: 790px;
+    height: 640px;
 }
 
 .carousel-control {
@@ -619,10 +621,10 @@ address {
     margin: 0;
 }
 
-#contactForm textarea, #contactForm input[type="text"] {
+#contactForm textarea, #contactForm input[type="text"], #contactForm input[type="email"] {
     border-bottom: 1px solid #dadada;
 }
-#contactForm textarea, #contactForm input[type="text"] {
+#contactForm textarea, #contactForm input[type="text"], #contactForm input[type="email"] {
     padding: 15px 0;
     border: none;
     border-bottom: 1px solid #dadada;

@@ -37,6 +37,7 @@
                                     <h3 id="titlePosition">SOFTWARE ENGINEER</h3>
                                     <div id="titleActions">
                                         <button type="button" class="btn btn-s" onclick="download()"><i class="fa fa-download"></i> CV</button>
+                                        <button type="button" class="btn btn-s" onclick="github()"><i class="fa fa-github"></i> Github</button>
                                         <button type="button" class="btn btn-s" onclick="contact()"><i class="fa fa-info"></i> Contact</button>
                                     </div>
                                 </div>
@@ -57,17 +58,21 @@
                                 Have a question for me or you are willing to give me feedback/advice/suggestion?
                                 Complete the form below and send your message at the moment.
                             </p>
-                            <p><span class='text-danger'>* Note:</span> The project's location (github) is temporary and the contact form will be non-functional until it's move to another hosting space. Please send your messages to <strong>zoran.gjuroski@gmail.com</strong></p>
-                            <form class="fixed" id="contactForm" novalidate="novalidate">
+                            <p>
+                                <span class='text-danger'>* Note:</span>
+                                This form uses <a href="https://formspree.io" target="_blank">formspree</a> service for sending email. If you have any problem send the email directly to <strong>zoran.gjuroski@gmail.com</strong>
+                            </p>
+                            <form id="contactForm" class="fixed" action="https://formspree.io/zoran.gjuroski@gmail.com"
+                                  method="POST">
                                 <fieldset>
                                     <div id="formstatus"></div>
-                                    <input class="col-md-12" id="cname" type="text" name="cname" value="" placeholder="Enter your name here" data-rule-required="true">
-                                    <input class="col-md-12" id="cemail" type="text" name="cemail" value="" placeholder="Email address" data-rule-required="true">
-                                    <input class="col-md-12" id="csubject" type="text" name="csubject" value="" placeholder="Subject" data-rule-required="true">
-                                    <textarea class="col-md-12" id="cmessage" name="cmessage" rows="6" cols="25" placeholder="Message" data-rule-required="true"></textarea>
+                                    <input class="col-md-12" id="cname" type="text" placeholder="Enter your name here" data-rule-required="true">
+                                    <input class="col-md-12" id="cemail" type="email" name="_replyto"  placeholder="Email address" data-rule-required="true">
+                                    <input class="col-md-12" id="csubject" type="text" placeholder="Subject" data-rule-required="true">
+                                    <textarea class="col-md-12" id="cmessage" name="name" rows="6" cols="25" placeholder="Message" data-rule-required="true"></textarea>
                                     <div class="clearfix"></div>
                                     <div>
-                                        <input type="submit" class="btn btn-s disabled" onclick="sendContactMsg()" value="Send!">
+                                        <input type="submit" class="btn btn-s"  value="Send!">
                                     </div>
                                     <div id="msgSuccess" class="hidden">
                                         <span class="fa fa-check" style="background: #3c763d; color: #fff;"></span>
@@ -118,27 +123,26 @@
         <div id="quickContactWrap" class="sidebar">
             <div class="sidebar-box">
                 <div id="quickLinkForm">
-                    <form novalidate>
+                    <form action="https://formspree.io/zoran.gjuroski@gmail.com"
+                          method="POST">
                         <div class="form-group">
                             <h4>Contact form</h4>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="name" name="name" class="form-control" data-rule-required="true" placeholder="Name..." />
+                            <input type="email" name="_replyto" class="form-control" data-rule-required="true" placeholder="Email...">
                         </div>
                         <div class="form-group">
-                            <input type="text" id="address" name="address" class="form-control" data-rule-required="true" placeholder="Subject..." />
+                            <textarea name="name" class="form-control" rows="5" data-rule-required="true" placeholder="Message..."></textarea>
                         </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" class="form-control" rows="4" data-rule-required="true" placeholder="Message..."></textarea>
+                        <div class="form-group" style="margin-bottom:0;">
+                            <input type="submit" value="Send" class="btn btn-info">
                         </div>
-                        <div class="form-group" style="margin-bottom: 0;">
-                            <button type="button" class="btn btn-info disabled" onclick="sendMessage()">Save</button>
-                        </div>
-                        <p style="font-size: 13px;"><small><span class='text-danger'>* Note:</span> The project's location (github) is temporary and the contact form will be non-functional until it's move to another hosting space. Please send your messages to <strong>zoran.gjuroski@gmail.com</strong></small></p>
-                        <div id="msgSuccess" class="hidden">
-                            <span class="fa fa-check" style="background: #3c763d; color: #fff;"></span>
-                            <div>Your message has been sent successfully.</div>
-                        </div>
+                        <p style="font-size: 13px;">
+                            <small>
+                                <span class='text-danger'>* Note:</span>
+                                This form uses <a href="https://formspree.io" target="_blank">formspree</a> service for sending email. If you have any problem send the email directly to <strong>zoran.gjuroski@gmail.com</strong>
+                            </small>
+                        </p>
                     </form>
                 </div>
                 <div class="sidebar-icon">
@@ -156,19 +160,6 @@
             init();
             $("#contactForm").validate();
         });
-
-        function sendContactMsg() {
-            if ($("#contactForm").valid()) {
-                var msg = {
-                    Name: $("#cname").val(),
-                    Subject: $("#csubject").val(),
-                    Address: $("#cemail").val(),
-                    Message: $("#cmessage").val()
-                };
-
-                sendMessage(msg);
-            }
-        }
     </script>
 </body>
 </html>

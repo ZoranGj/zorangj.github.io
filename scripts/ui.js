@@ -90,10 +90,14 @@ function sendMessage(data) {
 }
 
 function download() {
-    var url = "/images/[CV]ZoranGjuroski.pdf";
+    var url = "images/[CV]ZoranGjuroski.pdf";
     window.open(url, '_blank');
 }
 
 function contact() {
     location.href = 'contact.html';
+}
+function github(){
+    var url = "https://github.com/ZoranGj";
+    window.open(url, '_blank');
 }
