@@ -638,6 +638,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, te
     border-color: #888;
     outline: none;
 }
+
 #contactForm input[type="submit"] {
     border: none;
     margin-top: 10px;
