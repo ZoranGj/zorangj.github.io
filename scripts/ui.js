@@ -1,4 +1,4 @@
-﻿function projectDetails(projId) {
+﻿function openProjectDetails(projId) {
     if (!projId) {
         return false;
     }
@@ -50,6 +50,12 @@ function init(){
         } else {
             $('#scrollTop').removeClass('show');
         }
+
+        if ($(window).scrollTop() > 210) {
+            $('#sideMenu').addClass('show');
+        } else {
+            $('#sideMenu').removeClass('show');
+        }
     });
 
     $(".sidebar-icon").click(function () {
@@ -68,25 +74,6 @@ function sendMessage(data) {
             Subject: $("#quickLinkForm #subject").val()
         };
     }
-
-    //$.ajax({
-    //    method: "post",
-    //    url: "/sendemail",
-    //    dataType: "json",
-    //    data: data,
-    //    success: function (content) {
-    //        $("#msgSuccess").show();
-    //        setTimeout(function() {
-    //            $("#msgSuccess").hide();
-    //        }, 10000);
-    //    },
-    //    error: function(er) {
-    //        $("#msgSuccess").show();
-    //        setTimeout(function() {
-    //            $("#msgSuccess").hide();
-    //        }, 10000);
-    //    }
-    //});
 }
 
 function download() {

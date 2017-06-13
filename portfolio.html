@@ -3,20 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoran Gjuroski</title>
+    <title>Zoran Gjuroski | Portfolio</title>
+    <meta name="description" content="Zoran Gjuroski personal website.">
+    <meta name="keywords" content="Zoran Gjuroski,portfolio,projects,work,applications">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Lato:400,300,700,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,300,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700,400,300" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/site.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="stylesheet" href="/css/font-awesome.min.css" />
-    <script type="text/javascript" src="/scripts/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.js"></script>
 
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c5bb3c04-6065-4382-a695-930a9a24935b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
@@ -24,20 +26,29 @@
 <body>
     <div class="container">
         <div class="row">
+            <!--<div id="sideMenu">
+                <ul class="pull-right menu">
+                    <li><a class="current mDefault" href="index.html">INFORMATION /</a></li>
+                    <li><a class="mPortfolio" href="portfolio.html">PORTFOLIO /</a></li>
+                    <li><a class="mContact" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>-->
+
             <div id="contentWrap">
                 <div id="content">
                     <div id="upper">
                         <div class="col-lg-8">
                             <div class="row">
                                 <div id="profileImg" class="col-sm-4">
-                                    <img style="width: 95%; height: 190px;" class="img-responsive img-thumbnail" src="/images/profile1.JPG" />
+                                    <img style="width: 100%; height: 100%;" class="img-responsive img-circle" src="images/profile1.JPG"/>
                                 </div>
                                 <div class="col-sm-8">
                                     <h2 id="titleName">
-                                        Zoran <br /> Gjuroski
+                                        Zoran Gjuroski
                                     </h2>
                                     <h3 id="titlePosition">SOFTWARE ENGINEER</h3>
                                     <div id="titleActions">
+
                                         <button type="button" class="btn btn-s" onclick="download()"><i class="fa fa-download"></i> CV</button>
                                         <button type="button" class="btn btn-s" onclick="github()"><i class="fa fa-github"></i> Github</button>
                                         <button type="button" class="btn btn-s" onclick="contact()"><i class="fa fa-info"></i> Contact</button>
@@ -46,10 +57,10 @@
                             </div>
                         </div>
                         <div id="upperMenu" class="col-lg-4">
-                            <ul id="menu" class="pull-right">
-                                <li><a id="mDefault" href="index.html">INFORMATION /</a></li>
-                                <li><a id="mPortfolio" class="current" href="portfolio.html">PORTFOLIO /</a></li>
-                                <li><a id="mContact" href="contact.html">CONTACT</a></li>
+                            <ul class="pull-right menu">
+                                <li><a class="mDefault" href="index.html">INFORMATION /</a></li>
+                                <li><a class="mPortfolio current" href="portfolio.html">PORTFOLIO /</a></li>
+                                <li><a class="mContact" href="contact.html">CONTACT</a></li>
                             </ul>
                         </div>
                     </div>
@@ -65,741 +76,12 @@
                         <span class="portfolio-category" data-group="desktop">Desktop apps</span>
                     </div>
                     <div id="itemsList">
-                        <div class="portfolio-item all desktop col-md-3" data-projid="1" data-groups='["0", "3"]'>
-                            <a role="button">
-                                <div class="portfolio-item-image"></div>
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>KnigW</h6>
-                                    <p> Desktop appication</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all web col-md-3" data-projid="2" data-groups='["0", "1"]'>
-                            <a role="button">
-                                <img src="/images/2/0.png" class="portfolio-item-image" alt="project image">
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>Markoskik73 </h6>
-                                    <p> Website </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all webd col-md-3" data-projid="3" data-groups='["0", "2"]'>
-                            <a role="button">
-                                <img src="/images/3/0.png" class="portfolio-item-image">
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6> SRIS </h6>
-                                    <p> Web application </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all webd col-md-3" data-projid="4" data-groups='["0", "2"]'>
-                            <a role="button">
-                                <img src="/images/4/0.png" class="portfolio-item-image">
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>DenDiet</h6>
-                                    <p> Web application </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all webd col-md-3" data-projid="5" data-groups='["0", "3"]'>
-                            <a role="button">
-                                <img src="/images/5/0.png" class="portfolio-item-image">
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>Electronic Services Framework</h6>
-                                    <p> Web application </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all desktop col-md-3" data-projid="6" data-groups='["0", "2"]'>
-                            <a role="button">
-                                <img src="/images/6/0.png" class="portfolio-item-image">
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>Electronic Archive</h6>
-                                    <p> Desktop application </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all webd col-md-3" data-projid="7" data-groups='["0", "2"]'>
-                            <a role="button">
-                                <div class="portfolio-item-image"></div>
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>Coke SAM</h6>
-                                    <p> Web API </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all webd col-md-3" data-projid="8" data-groups='["0", "2"]'>
-                            <a role="button">
-                                <img src="/images/8/0.png" class="portfolio-item-image">
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>[CRP] - Configuration portal</h6>
-                                    <p> Web application </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all webd col-md-3" data-projid="9" data-groups='["0", "2"]'>
-                            <a role="button">
-                                <img src="/images/9/0.png" class="portfolio-item-image">
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>ePermit Serbia</h6>
-                                    <p> Web application </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all webd col-md-3" data-projid="10" data-groups='["0", "2"]'>
-                            <a role="button">
-                                <img src="/images/10/0.png" class="portfolio-item-image">
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>[CRP] - Support tool</h6>
-                                    <p> Web application </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all webd col-md-3" data-projid="11" data-groups='["0", "2"]'>
-                            <a role="button">
-                                <img src="/images/11/0.png" class="portfolio-item-image">
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>Sara fashion eOrders</h6>
-                                    <p> Web application </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all webd col-md-3" data-projid="12" data-groups='["0", "1"]'>
-                            <a role="button">
-                                <img src="/images/12/0.png" class="portfolio-item-image">
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>TheTowawayZone</h6>
-                                    <p> Web application </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="portfolio-item all web col-md-3" data-projid="13" data-groups='["0", "1"]'>
-                            <a role="button">
-                                <img src="/images/13/0.gif" class="portfolio-item-image">
-                                <span class="fa fa-search details"></span>
-                                <div class="portfolio-item-desc">
-                                    <h6>Kindergarten site</h6>
-                                    <p> Website </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="clearfix"></div>
+
                     </div>
                 </div>
-                    <div class="hidden">
-                        <div class="project" data-id="1">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/project.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>KnigW</h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        Making updates and enhancements in the code and the database tables of an existing system.
-                                        Creating operations to communicate with FTP server and write/read/update files, and creating application module for generating XML reports for the companies which use the system (several company types).
-                                        Visual Basic, XML.
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="project" data-id="2">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/2/0.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/2/1.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/2/2.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/2/3.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>Markoskik73 </h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        It represents a static website for the needs of the company MarkoskiK73 (civil engineering and constructions).
-                                        The website is (mobile-first) responsive.
-                                        <div class="tag-items">
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>Bootstrap</span>
-                                            <span>PHP (contact)</span>
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="project" data-id="3">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/3/0.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/3/2.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/3/3.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/3/4.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/3/6.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/3/7.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>SRIS</h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        A system (web application) that aims to support, facilitate and accelerate the processes of supervision of the capital market in the country. <br />
-                                        It is made of a module for corporate finance which analyses the data received from The Macedonian Stock Exchange and the Central Depository of Securities,
-                                        and a module that represents a segment of the application used for supervision of management companies of investment funds.
-                                        <div class="tag-items">
-                                            <span>ASP.NET MVC</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>Bootstrap</span>
-                                            <span>jQuery</span>
-                                            <span>WCF</span>
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                    <button type="button" class="btn btn-info" onclick="window.open('https://sris.sec.gov.mk', '_blank')">
-                                        <i class="fa fa-external-link"></i> Visit website
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="project" data-id="4">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/4/0.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/4/1.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/4/3.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/4/4.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>DenDiet </h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        Dynamics Energy Nutrition is a system that needs the client services and consultancy from professional doctors - nutritionists.
-                                        The main goal is for patients to lose weight and to lead a healthy life. <br />
-                                        The application consist of three areas - public for not lot logged in users, administration for the nutritionists and patient area.
-                                        The admin application includes patient management, applications management where they can approve/accept patient applications, applications history, chat, etc.
-                                        The patient application is the patient's profile and there the patient inserts his measurements, views the food menus sent from the doctor, chats,
-                                        and sends tracking forms about his health when needed.
-                                        <div class="tag-items">
-                                            <span>ASP.NET MVC</span>
-                                            <span>KnockoutJS</span>
-                                            <span>SignalR</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>Bootstrap</span>
-                                            <span>jQuery</span>
-                                            <span>Entity framework</span>
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                    <button type="button" class="btn btn-info" onclick="window.open('http://www.dendiet.com/', '_blank')">
-                                        <i class="fa fa-external-link"></i> Visit website
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="project" data-id="5">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/5/0.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/5/1.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/5/2.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>Electronic Services Framework</h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        Framework for electronic services, designed to provide the end users configured catalogs with services,
-                                        and administration which includes content management and report generation.
-                                        <div class="tag-items">
-                                            <span>ASP.NET MVC</span>
-                                            <span>ASP.NET WebForms</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>Bootstrap</span>
-                                            <span>Entity framework</span>
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="project" data-id="6">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/6/0.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/6/1.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/6/2.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>Electronic Archive</h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        e-Archive is a system that is used for archiving documents. It represents a desktop
-                                        application created with Windows Presentation Foundation (WPF) that allows the archivist to
-                                        manage companies that have their own separate archives. The application is created following the
-                                        principles and laws on archiving imposed by the Government of Macedonia.
-                                        <div class="tag-items">
-                                            <span>C#</span>
-                                            <span>WPF</span>
-                                            <span>Caliburn Micro</span>
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="project" data-id="7">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/project.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>Coke SAM</h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        – Project that includes two parts: web API that is used through mobile devices for sharing
-                                        coupons and messages for McDonald’s meals, and an administration portal for user/coupon/messages/files management.
-                                        <div class="tag-items">
-                                            <span>C#</span>
-                                            <span>ASP.NET Web API</span>
-                                            <span>Entity Framework</span>
-                                            <span>Bootstrap</span>
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="project" data-id="8">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/8/0.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/8/1.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/8/2.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/8/4.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/8/5.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>[CRP] - Configuration portal</h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        CRP (Core registry platform) – Generic framework for registers and business processes.
-                                        It represents a big platform which contains web application for configuring metadata about new registration systems through creating dynamic
-                                        database model – entities, properties, relationships, business roles, roles, organizations, documents, validation rules,
-                                        and configuring business processes with activities, actions, notifications.
-                                        <br/> The configured metadata is published and used from other web application from the end user who
-                                        fills in the needed data in the configured processes/activities.
-                                        The platform also includes: BPM tool, web application for supervision and support, business rule component,
-                                        workflow manager, document management system etc.
-                                        <div class="tag-items">
-                                            <span>C#</span>
-                                            <span>ASP.NET MVC</span>
-                                            <span>WCF</span>
-                                            <span>Bootstrap</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>jQuery</span>
-                                            <span>Dapper</span>
-                                            <span>SQL</span>
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="project" data-id="9">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/9/0.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/9/1.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/9/2.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/9/3.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/9/4.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/9/5.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/9/6.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/9/9.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>ePermit Serbia</h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        [CRP instance]. System for issuing construction permits in Serbia.
-                                        It includes all needed processes for construction: submitting application for location conditions,
-                                        obtaining all kinds of permits from the needed institutions, approval of works, etc.
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                    <button type="button" class="btn btn-info" onclick="window.open('https://ceop.apr.gov.rs/eregistrationportal/', '_blank')">
-                                        <i class="fa fa-external-link"></i> Visit website
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+                <div id="itemDetailsList" class="hidden">
 
-                        <div class="project" data-id="10">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/10/0.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/10/1.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/10/3.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/10/5.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>[CRP] - Support tool</h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        CRP (Core registry platform) – Generic framework for registers and business processes.
-                                        It represents a big platform which contains web application for configuring metadata about new registration systems through creating dynamic
-                                        database model – entities, properties, relationships, business roles, roles, organizations, documents, validation rules,
-                                        and configuring business processes with activities, actions, notifications.
-                                        <br/>The configured metadata is published and used from other web application from the end user who
-                                        fills in the needed data in the configured processes/activities.
-                                        The platform also includes: BPM tool, web application for supervision and support, business rule component,
-                                        workflow manager, document management system etc.
-                                        <div class="tag-items">
-                                            <span>C#</span>
-                                            <span>ASP.NET MVC</span>
-                                            <span>WCF</span>
-                                            <span>SignalR</span>
-                                            <span>Bootstrap</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>jQuery</span>
-                                            <span>Dapper</span>
-                                            <span>SQL</span>
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="project" data-id="11">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/11/0.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/11/1.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/11/2.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/11/3.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>Sara fashion eOrders</h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        Web application for electronic orders created with Microsoft technologies.
-                                        Includes filling shopping cart with products from various categories and creating orders with articles.
-                                        <div class="tag-items">
-                                            <span>C#</span>
-                                            <span>ADO.NET</span>
-                                            <span>ASP.NET MVC</span>
-                                            <span>Bootstrap</span>
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                    <button type="button" class="btn btn-info" onclick="window.open('http://194.61.58.146:888/webnaracki/', '_blank')">
-                                        <i class="fa fa-external-link"></i> Visit website
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="project" data-id="12">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/12/0.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/12/3.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/12/4.png" alt="...">
-                                        </div>
-                                        <div class="item">
-                                            <img class="img-responsive" src="/images/12/5.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>TheTowawayZone</h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        Web application for towing companies that provides various features for vehicle impound activities including:
-                                        vehicle impound, calculating fees for impounded vehicle, vehicle reports, user and role management, managing
-                                        vehicles on sale, progress bar and deadline calculator feature for impounded vehicles.
-                                        <div class="tag-items">
-                                            <span>C#</span>
-                                            <span>ASP.NET MVC</span>
-                                            <span>Entity Framework</span>
-                                            <span>KnockoutJS</span>
-                                            <span>SignalR</span>
-                                            <span>Bootstrap</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>jQuery</span>
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                    <button type="button" class="btn btn-info" onclick="window.open('http://thetowawayzone.com/public', '_blank')">
-                                        <i class="fa fa-external-link"></i> Visit website
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="project" data-id="13">
-                            <div class="left-col">
-                                <img src="/images/monitor.png" class="gallery-holder" />
-                                <div class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img class="img-responsive" src="/images/13/1.png" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1>Kindergarten site</h1>
-                                <div class="project-descr">
-                                    <p class="clearfix">
-                                        <span class="text-success">[In progress]</span> Static website created for the needs of a local kindergarten.
-                                        The website includes information about the schedule of the kindergarten, the food menu, gallery of all events,
-                                        news and administration of all listed categories.
-                                        <div class="tag-items">
-                                            <span>ADO.NET</span>
-                                            <span>Bootstrap</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>jQuery</span>
-                                        </div>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                        <i class="fa fa-times"></i> Close
-                                    </button>
-                                </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-
-                    </div>
-
+                </div>
                 </div>
             </div>
             <div id="dialog" class="modal fade">
@@ -817,7 +99,7 @@
                 </div>
             </div>
         </div>
-        <div id="quickContactWrap" class="sidebar">
+        <div id="quickContactWrap" class="sidebar hidden">
             <div class="sidebar-box">
                 <div id="quickLinkForm">
                     <form action="https://formspree.io/zoran.gjuroski@gmail.com"
@@ -851,31 +133,13 @@
     <span id="scrollTop" class="action-btn"><i class="fa fa-arrow-up"></i></span>
     <span id="download" class="action-btn" onclick="download()"><i class="fa fa-download"></i></span>
 
-    <script type="text/javascript" src="/scripts/ui.js"></script>
+    <script type="text/javascript" src="scripts/ui.js"></script>
+    <script type="text/javascript" src="scripts/projects.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+            renderProjects();
             init();
-            $(".portfolio-item").click(function () {
-                var id = $(this).data('projid');
-                projectDetails(id);
-            });
-
-            var $grid = $('#itemsList').isotope({
-                itemSelector: '.portfolio-item',
-                layoutMode: 'fitRows'
-            });
-
-            $(".portfolio-category").click(function () {
-                $(".portfolio-category.active").removeClass('active');
-                $(this).addClass('active');
-
-                var categoryId = $(this).data('group');
-                if (categoryId == 'all') {
-                    $grid.isotope({ filter: '*' });
-                } else {
-                    $grid.isotope({ filter: '.' + categoryId });
-                }
-            });
+            initializeView();
         });
     </script>
 </body>

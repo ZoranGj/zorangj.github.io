@@ -3,20 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoran Gjuroski</title>
+    <title>Zoran Gjuroski | Contact</title>
+    <meta name="description" content="Zoran Gjuroski personal website.">
+    <meta name="keywords" content="Zoran Gjuroski,contact,send message">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Lato:400,300,700,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,300,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700,400,300" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/site.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="stylesheet" href="/css/font-awesome.min.css" />
-    <script type="text/javascript" src="/scripts/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.js"></script>
 
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c5bb3c04-6065-4382-a695-930a9a24935b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
@@ -24,20 +26,29 @@
 <body>
     <div class="container">
         <div class="row">
+            <!--<div id="sideMenu">
+                <ul class="pull-right menu">
+                    <li><a class="current mDefault" href="index.html">INFORMATION /</a></li>
+                    <li><a class="mPortfolio" href="portfolio.html">PORTFOLIO /</a></li>
+                    <li><a class="mContact" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>-->
+
             <div id="contentWrap">
                 <div id="content">
                     <div id="upper">
                         <div class="col-lg-8">
                             <div class="row">
                                 <div id="profileImg" class="col-sm-4">
-                                    <img style="width: 95%; height: 190px;" class="img-responsive img-thumbnail" src="/images/profile1.JPG" />
+                                    <img style="width: 100%; height: 100%;" class="img-responsive img-circle" src="images/profile1.JPG"/>
                                 </div>
                                 <div class="col-sm-8">
                                     <h2 id="titleName">
-                                        Zoran <br /> Gjuroski
+                                        Zoran Gjuroski
                                     </h2>
                                     <h3 id="titlePosition">SOFTWARE ENGINEER</h3>
                                     <div id="titleActions">
+
                                         <button type="button" class="btn btn-s" onclick="download()"><i class="fa fa-download"></i> CV</button>
                                         <button type="button" class="btn btn-s" onclick="github()"><i class="fa fa-github"></i> Github</button>
                                         <button type="button" class="btn btn-s" onclick="contact()"><i class="fa fa-info"></i> Contact</button>
@@ -46,10 +57,10 @@
                             </div>
                         </div>
                         <div id="upperMenu" class="col-lg-4">
-                            <ul id="menu" class="pull-right">
-                                <li><a id="mDefault" href="index.html">INFORMATION /</a></li>
-                                <li><a id="mPortfolio" href="portfolio.html">PORTFOLIO /</a></li>
-                                <li><a id="mContact" class="current" href="contact.html">CONTACT</a></li>
+                            <ul class="pull-right menu">
+                                <li><a class="mDefault" href="index.html">INFORMATION /</a></li>
+                                <li><a class="mPortfolio" href="portfolio.html">PORTFOLIO /</a></li>
+                                <li><a class="mContact current" href="contact.html">CONTACT</a></li>
                             </ul>
                         </div>
                     </div>
@@ -60,7 +71,7 @@
                                 Have a question for me or you are willing to give me feedback/advice/suggestion?
                                 Complete the form below and send your message at the moment.
                             </p>
-                            <p>
+                            <!--<p>
                                 <span class='text-danger'>* Note:</span>
                                 This form uses <a href="https://formspree.io" class="link" target="_blank">formspree</a> service for sending email. If you have any problem send the email directly to <strong>zoran.gjuroski@gmail.com</strong>
                             </p>
@@ -81,7 +92,7 @@
                                         <div>Your message has been sent successfully.</div>
                                     </div>
                                 </fieldset>
-                            </form>
+                            </form>-->
                         </div>
                         <div class="col-md-4">
                             <div class="social-media fixed">
@@ -122,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div id="quickContactWrap" class="sidebar">
+        <div id="quickContactWrap" class="sidebar hidden">
             <div class="sidebar-box">
                 <div id="quickLinkForm">
                     <form action="https://formspree.io/zoran.gjuroski@gmail.com"
@@ -156,11 +167,11 @@
     <span id="scrollTop" class="action-btn"><i class="fa fa-arrow-up"></i></span>
     <span id="download" class="action-btn" onclick="download()"><i class="fa fa-download"></i></span>
 
-    <script type="text/javascript" src="/scripts/ui.js"></script>
+    <script type="text/javascript" src="images/ui.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             init();
-            $("#contactForm").validate();
+            //$("#contactForm").validate();
         });
     </script>
 </body>
