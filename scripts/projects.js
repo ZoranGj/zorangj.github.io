@@ -91,7 +91,7 @@ function renderProjects(){
 
         detailsHtml += '</div></div></div> ';
         detailsHtml += '<div class="clearfix"></div>'+
-            '<p>'+
+            '<p class="proj-navigation">'+
             '<button type="button" class="btn btn-default" data-dismiss="modal">'+
             '<i class="fa fa-times"></i> Close'+
             '</button>';
