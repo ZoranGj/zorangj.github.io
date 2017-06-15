@@ -58,8 +58,24 @@ function renderProjects(){
 
         $projContainer.append(projHtml);
 
-        detailsHtml += '<div class="project" data-id="'+elem.id+'">'+
-            '<div class="left-col">'+
+        detailsHtml += '<div class="project" data-id="'+elem.id+'">';
+
+        detailsHtml += '<div class="proj-wrap">'+
+            '<h1>' + elem.name +' <button type="button" class="close proj-action exit" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button></h1>'+
+            '<div class="project-descr">'+
+            '<p class="clearfix">' +elem.fulldesc;
+
+        if(elem.tags && elem.tags.length > 0){
+            detailsHtml += '<div class="tag-items">';
+            for(var k in elem.tags){
+                detailsHtml += '<span>' + elem.tags[k] + '</span>';
+            }
+            detailsHtml += '</div>';
+        }
+
+        detailsHtml += '</p>'+
+            '</div>';
+        detailsHtml += '<div class="images-wrap">'+
             '<img src="images/monitor.png" class="gallery-holder" />'+
             '<div class="carousel slide" data-ride="carousel">'+
             '<div class="carousel-inner">';
@@ -73,23 +89,8 @@ function renderProjects(){
                 '</div>';
         }
 
-        detailsHtml += '</div></div></div> '+
-            '<div class="right-col">'+
-            '<h1>' + elem.name +'</h1>'+
-            '<div class="project-descr">'+
-            '<p class="clearfix">' +elem.fulldesc;
-
-        if(elem.tags && elem.tags.length > 0){
-            detailsHtml += '<div class="tag-items">';
-            for(var k in elem.tags){
-                detailsHtml += '<span>' + elem.tags[k] + '</span>';
-            }
-            detailsHtml += '</div>';
-        }
-
-        detailsHtml += '</p>'+
-            '</div>'+
-            '<div class="clearfix"></div>'+
+        detailsHtml += '</div></div></div> ';
+        detailsHtml += '<div class="clearfix"></div>'+
             '<p>'+
             '<button type="button" class="btn btn-default" data-dismiss="modal">'+
             '<i class="fa fa-times"></i> Close'+
@@ -308,7 +309,7 @@ var projects = [
         id: 11,
         groups: '["0", "2"]',
         img: "images/11/0.png",
-        name: '[Sara fashion eOrders',
+        name: 'Sara fashion eOrders',
         desc: ' Web application',
         class: 'all webd',
         images: [
