@@ -65,17 +65,6 @@ function init(){
     $("#quickLinkForm form").validate();
 }
 
-function sendMessage(data) {
-    if (!data && $("#quickLinkForm form").valid()) {
-        data = {
-            Name: $("#quickLinkForm #name").val(),
-            Message: $("#quickLinkForm #message").val(),
-            Address: $("#quickLinkForm #address").val(),
-            Subject: $("#quickLinkForm #subject").val()
-        };
-    }
-}
-
 function download() {
     var url = "images/[CV]ZoranGjuroski.pdf";
     window.open(url, '_blank');
