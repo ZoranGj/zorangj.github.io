@@ -678,52 +678,97 @@ button + button {
     word-wrap: break-word;
 }
 
+#contact {
+    font-size:14px;
+}
+
 .social-media {
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 a.social-icon {
-    background-color: #252525;
-    color: #fff;
+    padding: 15px 27px;
+    font-size: 22px;
 }
-a.social-icon {
-    float: left;
-    display: block;
-    margin-right: 15px;
-    margin-bottom: 5px;
-    background-color: #252525;
-    color: #fff;
-    text-align: center;
-    padding: 7px 11px;
-    font-size: 19px;
-    transition: opacity 0.4s;
-}
-    a.social-icon:hover {
-        opacity: 0.6;
+    a.social-icon:not(:last-of-type){
+        margin-right: 15px;
     }
-address {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-#contactForm {
-    overflow: hidden;
-    margin-bottom: 15px;
-}
-#contactForm fieldset {
-    margin: 0;
-}
 
-#contactForm textarea, #contactForm input[type="text"], #contactForm input[type="email"] {
-    border-bottom: 1px solid #dadada;
+    a.social-icon * {
+        color: #fff;
+    }
+
+.social-google {
+    background-color: #da573b;
+    border-color: #be5238;
 }
-#contactForm textarea, #contactForm input[type="text"], #contactForm input[type="email"] {
-    padding: 15px 0;
-    border: none;
-    border-bottom: 1px solid #dadada;
-    margin-bottom: 0;
-    resize: none;
+    .social-google:hover{
+        background-color: #be5238;
+        border-color: #9b4631;
+    }
+
+.social-twitter {
+    background-color: #1daee3;
+    border-color: #3997ba;
 }
+    .social-twitter:hover {
+        background-color: #3997ba;
+        border-color: #347b95;
+    }
+
+.social-facebook {
+    background-color: #4c699e;
+    border-color: #47618d;
+}
+    .social-facebook:hover {
+        background-color: #47618d;
+        border-color: #3c5173;
+    }
+
+.social-linkedin {
+    background-color: #4875B4;
+    border-color: #466b99;
+}
+    .social-linkedin:hover {
+        background-color: #466b99;
+        border-color: #3b5a7c;
+    }
+
+.social-github {
+    background-color: #333;
+    border-color: #222;
+}
+    .social-github:hover {
+        background-color: #222;
+        border-color: #111;
+    }
+
+.social-runkeeper {
+    padding: 15px 20px !important;
+    background-color: rgb(45, 201, 216);
+    border-color: #222;
+}
+    .social-runkeeper img {
+        width: 43px;
+        margin-top: -6px;
+    }
+    .social-runkeeper:hover {
+        opacity: 0.9;
+        background-color: rgb(45, 201, 216);
+        border-color: #111;
+    }
+
+#contact address {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+    #contact address > span {
+        display: block;
+        margin: 6px 5px;
+    }
+
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, textarea:focus {
     border-color: #888;
 }
