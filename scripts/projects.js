@@ -61,7 +61,7 @@ function renderProjects(){
         detailsHtml += '<div class="project" data-id="'+elem.id+'">';
 
         detailsHtml += '<div class="proj-wrap">'+
-            '<h1>' + elem.name +' <button type="button" class="close proj-action exit" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button></h1>'+
+            '<h1 class="blue">' + elem.name +' <button type="button" class="close proj-action exit" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button></h1>'+
             '<div class="project-descr">'+
             '<p class="clearfix">' +elem.fulldesc;
 
