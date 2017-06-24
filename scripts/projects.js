@@ -318,7 +318,7 @@ var projects = [
             "images/11/2.png",
             "images/11/3.png"
         ],
-        fulldesc: 'Web application for electronic orders created with Microsoft technologies. '+
+        fulldesc: 'e-Commerce web application for electronic orders created with Microsoft technologies. '+
         'Includes filling shopping cart with products from various categories and creating orders with articles.',
         tags: ['C#', 'ASP.NET MVC', 'ADO.NET', 'HTML', 'CSS', 'Bootstrap'],
         url: 'http://194.61.58.146:888/webnaracki/'
@@ -344,18 +344,44 @@ var projects = [
     },
     {
         id: 13,
-        groups: '["0", "1"]',
-        img: "images/13/0.gif",
-        name: 'Kindergarten site',
-        desc: ' Website',
-        class: 'all web',
+        groups: '["0", "2"]',
+        img: "images/13/0.png",
+        name: 'Sara fashion eOrders',
+        desc: ' Web application',
+        class: 'all webd',
         images: [
-            "images/13/1.png"
+            "images/13/0.png",
         ],
-        fulldesc: '[In progress]</span> Static website created for the needs of a local kindergarten.'+
-        'The website includes information about the schedule of the kindergarten, the food menu, gallery of all events,'+
-        'news and administration of all listed categories..',
-        tags: ['HTML', 'CSS', 'Bootstrap', 'jQuery', 'ADO.NET'],
-        url: null
-    }
+        fulldesc: 'e-Commerce web application for electronic orders created with Microsoft technologies. '+
+        'Includes filling shopping cart with products from various categories and creating orders with articles.',
+        tags: ['C#', 'ASP.NET MVC', 'ADO.NET', 'HTML', 'CSS', 'Bootstrap'],
+        url: 'http://shop.atomem.mk'
+    },
+    {
+        id: 14,
+        groups: '["0", "2"]',
+        img: null,
+        name: 'HTMLGeneratorAPI',
+        desc: ' C# Library',
+        class: 'all webd',
+        images: [
+        ],
+        fulldesc: 'Fluent API for generating HTML (complex forms, tables..) from C# code. The library is published as a nuget package.',
+        tags: ['C#'],
+        url: 'https://www.nuget.org/packages/HTMLGeneratorAPI/'
+    },
+    {
+        id: 15,
+        groups: '["0", "2", "3"]',
+        img: null,
+        name: 'Organizer',
+        desc: ' Web & desktop application',
+        class: 'all webd desktop',
+        images: [
+
+        ],
+        fulldesc: 'The solution offers desktop and web client which helps you track and improve your productivity.',
+        tags: ['C#', 'ASP.NET MVC', 'ADO.NET', 'HTML', 'CSS', 'Bootstrap'],
+        url: 'http://shop.atomem.mk'
+    },
 ];
