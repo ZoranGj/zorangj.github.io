@@ -346,7 +346,7 @@ var projects = [
         id: 13,
         groups: '["0", "2"]',
         img: "images/13/0.png",
-        name: 'Sara fashion eOrders',
+        name: 'AtomeM',
         desc: ' Web application',
         class: 'all webd',
         images: [
