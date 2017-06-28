@@ -384,4 +384,18 @@ var projects = [
         tags: ['C#', 'ASP.NET MVC', 'ADO.NET', 'HTML', 'CSS', 'Bootstrap'],
         url: 'http://shop.atomem.mk'
     },
+    {
+        id: 16,
+        groups: '["0", "2", "4"]',
+        img: "images/16/0.png",
+        name: 'Snippets',
+        desc: ' Web application',
+        class: 'all webd ml && x.Goal.User.Id == UserId',
+        images: [
+            "images/16/0.png"
+        ],
+        fulldesc: 'an application which can recognize programming language and other useful information for code snippets using some Machine Learning techniques and algorithms. The application is able to learn and to improve the accuracy in recognizing the code snippets while processing them. Then, the application can manage the snippets repository and use it for various integrations.',
+        tags: ['C#', "Naive Bayes", 'Support Vector Machine', 'ASP.NET MVC', 'HTML', 'CSS', 'Bootstrap'],
+        url: 'https://github.com/ZoranGj/snippets'
+    },
 ];

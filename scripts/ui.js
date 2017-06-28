@@ -61,8 +61,6 @@ function init(){
     $(".sidebar-icon").click(function () {
         $(this).parent(".sidebar-box").toggleClass("show");
     });
-
-    $("#quickLinkForm form").validate();
 }
 
 function download() {

@@ -33,13 +33,17 @@ a {
     box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
     padding-bottom: 30px;
 }
+    #mainInfo #content {
+        padding-bottom: 60px;
+    }
 
 #upper {
     /*border-top: 10px solid #fdb020;*/
-    padding: 45px 0;
+    padding: 45px;
+    padding-bottom: 25px;
     overflow: auto;
     background: #fafafa;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 #upper:after {
@@ -62,9 +66,10 @@ a {
 }
 
 #profileImg {
-    width: 181px;
+    width: 160px;
     height: 159px;
     margin-right: 10px;
+    padding: 0;
 }
     #profileImg img {
         -webkit-filter: grayscale(1);
