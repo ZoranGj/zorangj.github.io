@@ -32,7 +32,6 @@ function initializeView(){
     });
 }
 
-
 function renderProjects(){
     var projHtml = '',
         detailsHtml = '',
@@ -44,8 +43,8 @@ function renderProjects(){
         projHtml += '<div class="portfolio-item col-md-4 '+ elem.class +'" data-projid="'+ elem.id +'" data-groups='+ elem.groups +'> '+
             '<a role="button"> '+
             '<div class="portfolio-image-wrapper">';
-        if (elem.img != null) {
-            projHtml += '<img src="' + elem.img + '" class="portfolio-item-image" alt="project image">';
+        if (elem.images.length) {
+            projHtml += '<img src="' + elem.images[0] + '" class="portfolio-item-image" alt="project image">';
         }
         else {
             projHtml += '<div class="portfolio-item-image"></div>';
@@ -114,7 +113,6 @@ var projects = [
     {
         id: 1,
         groups: '["0", "3"]',
-        img: null,
         name: 'KnigW',
         desc: ' Desktop application',
         class: 'all desktop',
@@ -127,7 +125,6 @@ var projects = [
     {
         id: 2,
         groups: '["0", "1"]',
-        img: 'images/2/0.png',
         name: 'Markoskik73',
         desc: ' Website',
         class: 'all web',
@@ -145,7 +142,6 @@ var projects = [
     {
         id: 3,
         groups: '["0", "2"]',
-        img: 'images/3/0.png',
         name: 'SRIS',
         desc: ' Web application',
         class: 'all webd',
@@ -165,7 +161,6 @@ var projects = [
     {
         id: 4,
         groups: '["0", "2"]',
-        img: "images/4/0.png",
         name: 'DenDiet',
         desc: ' Web application',
         class: 'all webd',
@@ -186,7 +181,6 @@ var projects = [
     {
         id: 5,
         groups: '["0", "3"]',
-        img: "images/5/0.png",
         name: 'Electronic Services Framework',
         desc: ' Web application',
         class: 'all webd',
@@ -203,7 +197,6 @@ var projects = [
     {
         id: 6,
         groups: '["0", "2"]',
-        img: "images/6/0.png",
         name: 'Electronic Archive',
         desc: ' Desktop application',
         class: 'all desktop',
@@ -235,7 +228,6 @@ var projects = [
     {
         id: 8,
         groups: '["0", "2"]',
-        img: "images/8/0.png",
         name: '[CRP] - Configuration portal',
         desc: ' Web application',
         class: 'all webd',
@@ -261,7 +253,6 @@ var projects = [
     {
         id: 9,
         groups: '["0", "2"]',
-        img: "images/9/0.png",
         name: 'ePermit Serbia',
         desc: ' Web application',
         class: 'all webd',
@@ -283,7 +274,6 @@ var projects = [
     {
         id: 10,
         groups: '["0", "2"]',
-        img: "images/10/0.png",
         name: '[CRP] - Support tool',
         desc: ' Web application',
         class: 'all webd',
@@ -308,7 +298,6 @@ var projects = [
     {
         id: 11,
         groups: '["0", "2"]',
-        img: "images/11/0.png",
         name: 'Sara fashion eOrders',
         desc: ' Web application',
         class: 'all webd',
@@ -326,7 +315,6 @@ var projects = [
     {
         id: 12,
         groups: '["0", "1"]',
-        img: "images/12/0.png",
         name: 'TheTowawayZone',
         desc: ' Web application',
         class: 'all webd',
@@ -345,7 +333,6 @@ var projects = [
     {
         id: 13,
         groups: '["0", "2"]',
-        img: "images/13/0.png",
         name: 'AtomeM',
         desc: ' Web application',
         class: 'all webd',
@@ -360,11 +347,11 @@ var projects = [
     {
         id: 14,
         groups: '["0", "2"]',
-        img: null,
         name: 'HTMLGeneratorAPI',
         desc: ' C# Library',
         class: 'all webd',
         images: [
+            'images/project.png'
         ],
         fulldesc: 'Fluent API for generating HTML (complex forms, tables..) from C# code. The library is published as a nuget package.',
         tags: ['C#'],
@@ -373,12 +360,15 @@ var projects = [
     {
         id: 15,
         groups: '["0", "2", "3"]',
-        img: null,
         name: 'Organizer',
         desc: ' Web & desktop application',
         class: 'all webd desktop',
         images: [
-
+            "images/15/0.png",
+            "images/15/1.png",
+            "images/15/3.png",
+            "images/15/4.png",
+            "images/15/5.png",
         ],
         fulldesc: 'The solution offers desktop and web client which helps you track and improve your productivity.',
         tags: ['C#', 'ASP.NET MVC', 'ADO.NET', 'HTML', 'CSS', 'Bootstrap'],
@@ -387,7 +377,6 @@ var projects = [
     {
         id: 16,
         groups: '["0", "2", "4"]',
-        img: "images/16/0.png",
         name: 'Snippets',
         desc: ' Web application',
         class: 'all webd ml && x.Goal.User.Id == UserId',
