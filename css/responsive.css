@@ -1,2 +1,79 @@
-﻿body {
+﻿/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    button + button {
+        margin-left: 10px;
+    }
+
+    .btn.btn-s {
+        padding: 8px 19px;
+        font-size: 14px;
+    }
+
+    #content {
+        margin: 50px auto;
+    }
+
+    #contentWrap {
+        margin: 0 60px;
+    }
+
+    #upper {
+        padding: 45px;
+    }
+    #upper:after {
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        -webkit-transform: translateX(-50%) rotate(45deg);
+        transform: translateX(-50%) rotate(45deg);
+        background: #fafafa;
+        position: absolute;
+        content: '';
+        pointer-events: none;
+        top: 256px;
+        z-index: 10;
+        background: inherit;
+    }
+    #upperMenu {
+        position: relative;
+        top: 0;
+    }
+    .menu li a {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .period {
+        float: right;
+        padding: 2px 20px;
+    }
+
+    .bar-wrap {
+        width: 48%;
+    }
+
+
+    /*PROJECTS PAGE:*/
+    .portfolio-item {
+        width: 30%;
+    }
+        .portfolio-item:not([style*="display: none"]):not(:nth-of-type(3n)){
+            margin-right: 40px;
+        }
+
+    /*CONTACT PAGE:
+    a.social-icon {
+        display:inline-block;
+        width:initial;
+    }*/
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
