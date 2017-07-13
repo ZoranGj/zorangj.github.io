@@ -14,7 +14,7 @@
     }
 
     #contentWrap {
-        margin: 0 60px;
+        margin: 0 30px;
     }
 
     #upper {
@@ -35,14 +35,17 @@
         background: inherit;
     }
     #upperMenu {
-        position: relative;
-        top: 0;
+        position: absolute;
+        top: 69px;
+        right: 52px;
     }
     .menu li a {
         font-size: 26px;
         line-height: 40px;
     }
-
+    #profileImg {
+        margin-left: 0;
+    }
     .period {
         float: right;
         padding: 2px 20px;
@@ -52,25 +55,63 @@
         width: 48%;
     }
 
+    /*PROJECTS PAGE:*/
+    .portfolio-item {
+        width: 45%;
+    }
+        .portfolio-item:not([style*="display: none"]):not(:nth-of-type(2n)){
+            margin-right: 40px;
+        }
+    .gallery-holder {
+        display: block;
+    }
+    .modal-body .carousel {
+        margin: 0 18px;
+    }
+    .modal-body {
+        padding: 20px;
+    }
+    .proj-navigation {
+        margin-top: 270px;
+    }
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+        height: 395px;
+    }
+
+    /*CONTACT PAGE:*/
+    a.social-icon {
+        display: inline;
+        margin-bottom: 0;
+        text-align: start;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #contentWrap {
+        margin: 0 60px;
+    }
+
+    #upperMenu {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .menu li a {
+        font-size: 26px;
+        line-height: 40px;
+    }
 
     /*PROJECTS PAGE:*/
     .portfolio-item {
         width: 30%;
     }
+        .portfolio-item:not([style*="display: none"]):not(:nth-of-type(2n)){
+            margin-right: 0;
+        }
         .portfolio-item:not([style*="display: none"]):not(:nth-of-type(3n)){
             margin-right: 40px;
         }
-
-    /*CONTACT PAGE:
-    a.social-icon {
-        display:inline-block;
-        width:initial;
-    }*/
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
 }
 
 /* Large devices (large desktops, 1200px and up) */
