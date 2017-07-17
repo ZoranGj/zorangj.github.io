@@ -2,6 +2,30 @@
  * Created by Zoran Gj on 6/2/2017.
  */
 function initializeView(){
+    var $grid = $('#itemsList').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+    });
+
+    $(".portfolio-category").click(function () {
+        $(".portfolio-category.active").removeClass('active');
+        $(this).addClass('active');
+
+        $(".portfolio-item.filtered").removeClass('filtered');
+
+        var categoryId = $(this).data('group');
+        var elements;
+        if (categoryId == 'all') {
+            $grid.isotope({ filter: '*' });
+        } else {
+           $grid.isotope({ filter: '.' + categoryId });
+        }
+        elements = $grid.isotope('getFilteredItemElements');
+        for(var i in elements){
+            $(elements[i]).addClass('filtered');
+        }
+    });
+
     $(".portfolio-item")
         .on('click', function () {
             var id = $(this).data('projid');
@@ -13,23 +37,6 @@ function initializeView(){
         .on('mouseout', function() {
             $(this).siblings().css({opacity: '1'});
         });
-
-    var $grid = $('#itemsList').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
-
-    $(".portfolio-category").click(function () {
-        $(".portfolio-category.active").removeClass('active');
-        $(this).addClass('active');
-
-        var categoryId = $(this).data('group');
-        if (categoryId == 'all') {
-            $grid.isotope({ filter: '*' });
-        } else {
-            $grid.isotope({ filter: '.' + categoryId });
-        }
-    });
 }
 
 function renderProjects(){
@@ -40,7 +47,7 @@ function renderProjects(){
 
     for(var i in projects){
         var elem = projects[i];
-        projHtml += '<div class="portfolio-item col-md-4 '+ elem.class +'" data-projid="'+ elem.id +'" data-groups='+ elem.groups +'> '+
+        projHtml += '<div class="portfolio-item filtered col-md-4 '+ elem.class +'" data-projid="'+ elem.id +'" data-groups='+ elem.groups +'> '+
             '<a role="button"> '+
             '<div class="portfolio-image-wrapper">';
         if (elem.images.length) {

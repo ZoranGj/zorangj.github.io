@@ -692,6 +692,7 @@ button + button {
 
 #contact {
     font-size:14px;
+    padding-bottom:45px;
 }
 
 .social-media {
@@ -711,6 +712,10 @@ a.social-icon {
 
     a.social-icon * {
         color: #fff;
+    }
+    a.social-icon + .tooltip{
+        font-size: 17px;
+        padding: 5px 8px;
     }
 
 .social-google {
