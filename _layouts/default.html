@@ -1,123 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zoran Gjuroski</title>
-  <meta name="description" content="Zoran Gjuroski personal website.">
-  <meta name="keywords" content="Zoran Gjuroski,zorangj,zoran gjuroski">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:700,400,300" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/site.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-  <script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+  {% include meta.html %}
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 </head>
+
 <body>
-<div id="mainInfo" class="container">
-  <div class="row">
-    <div id="contentWrap">
-      <div id="content">
-        <div id="upper">
-          <div class="col-lg-8">
-            <div class="row">
-              <div id="profileImg" class="col-xs-12 col-sm-4">
-                <img style="width: 100%; height: 100%;" class="img-responsive img-circle" src="images/profile2.jpg"/>
-              </div>
-              <div class="col-xs-12 col-sm-8">
-                <h2 id="titleName">
-                  Zoran Gjuroski
-                </h2>
-                <h3 id="titlePosition">SOFTWARE ENGINEER</h3>
-                <div id="titleActions">
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-                  <button type="button" class="btn btn-s" onclick="download()"><i class="fa fa-download"></i> CV</button>
-                  <button type="button" class="btn btn-s" onclick="github()"><i class="fa fa-github"></i> Github</button>
-                  <button type="button" class="btn btn-s" onclick="contact()"><i class="fa fa-info"></i> Contact</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="upperMenu" class="col-lg-4">
-            <ul class="pull-right menu">
-              <li><a class="current mDefault" href="index.html">INFORMATION /</a></li>
-              <li><a class="mPortfolio" href="portfolio.html">PORTFOLIO /</a></li>
-              <li><a class="mContact" href="contact.html">CONTACT</a></li>
-            </ul>
-          </div>
-        </div>
-
-        {{ content }}
-
-
+      <div class="site-info">
+        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        <p class="site-description">{{ site.description }}</p>
       </div>
-    </div>
-    <div id="dialog" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close proj-action prev"><i class="fa fa-arrow-left"></i></button>
-            <button type="button" class="close proj-action exit" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-            <button type="button" class="close proj-action next"><i class="fa fa-arrow-right"></i></button>
-          </div>
-          <div class="modal-body">
 
-          </div>
-        </div>
-      </div>
-    </div>
+      <nav>
+        <a href="{{ site.baseurl }}/">Blog</a>
+        <a href="{{ site.baseurl }}/about">About</a>
+      </nav>
+    </header>
   </div>
 </div>
-<span id="scrollTop" class="action-btn"><i class="fa fa-arrow-up"></i></span>
-<span id="download" class="action-btn" onclick="download()"><i class="fa fa-download"></i></span>
 
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c5bb3c04-6065-4382-a695-930a9a24935b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-<script type="text/javascript" src="scripts/ui.js"></script>
-<script type="text/javascript" src="scripts/projects.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        init();
+<div id="main" role="main" class="container">
+  {{ content }}
+</div>
 
-        var html = '';
-        var $details = $(".tooltip-details[title != '']");
-        $details.each(function (elem) {
-            var $elem = $(this);
-            if($elem.attr('title')){
-                var ids = $elem.attr('title').split(',');
-                html += '<div class="tag-proj-wrap">';
-                for(var i in ids){
-                    var project = $.grep(projects, function(e){ return e.id == ids[i]; })[0];
-                    if(project.images.length == 0) project.img = 'images/project.png';
-                    html += '<div class="tag-proj"><div><img class="tag-proj-img" src="'+project.images[0]+'" /></div>';
-                    html += '<span class="tag-proj-desc">'+ project.name +'</span></div>';
-                    if((parseInt(i) + 1) % 4 == 0){
-                        html += '</div><div class="tag-proj-wrap">';
-                    }
-                }
+<div class="wrapper-footer">
+  <div class="container">
+    <footer class="footer">
+      {% include svg-icons.html %}
+    </footer>
+  </div>
+</div>
 
-                html += '</div><div class="clearfix"></div>';
-                $elem.attr('title', html);
-                html = '';
-            }
-        });
-
-        $('.tooltip-details').tooltip({
-            placement: 'bottom',
-            html: 'true',
-            container: 'body'
-        });
-
-        $('.tooltip-details').on('show.bs.tooltip', function(){
-            $("#content").addClass('expanded');
-        });
-        $('.tooltip-details').on('hide.bs.tooltip', function(){
-            $("#content").removeClass('expanded');
-        });
-    });
-</script>
+{% include analytics.html %}
 </body>
 </html>
-
-
