@@ -1,18 +1,362 @@
-﻿---
-layout: default
----
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoran Gjuroski</title>
+    <meta name="description" content="Zoran Gjuroski personal website.">
+    <meta name="keywords" content="Zoran Gjuroski,zorangj,zoran gjuroski">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="mainInfo" class="container">
+    <div class="row">
+        <div id="contentWrap">
+            <div id="content">
+                <div id="upper">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div id="profileImg" class="col-xs-12 col-sm-4">
+                                <img style="width: 100%; height: 100%;" class="img-responsive img-circle" src="images/profile2.jpg"/>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <h2 id="titleName">
+                                    Zoran Gjuroski
+                                </h2>
+                                <h3 id="titlePosition">SOFTWARE ENGINEER</h3>
+                                <div id="titleActions">
 
-<div class="posts">
-    {% for post in site.posts %}
-    <article class="post">
-
-        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-        <div class="entry">
-            {{ post.excerpt }}
+                                    <button type="button" class="btn btn-s" onclick="download()"><i class="fa fa-download"></i> CV</button>
+                                    <button type="button" class="btn btn-s" onclick="github()"><i class="fa fa-github"></i> Github</button>
+                                    <button type="button" class="btn btn-s" onclick="contact()"><i class="fa fa-info"></i> Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="upperMenu" class="col-lg-4">
+                        <ul class="pull-right menu">
+                            <li><a class="current mDefault" href="index.html">INFORMATION /</a></li>
+                            <li><a class="mPortfolio" href="portfolio.html">PORTFOLIO /</a></li>
+                            <li><a class="mContact" href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="info" class="resume-section">
+                    <div class="col-md-5">
+                        <h3 class="resume-section-title">Personal information</h3>
+                        <div class="resume-item">
+                            <ul id="personalInfo">
+                                <li>Date of birth: 10.03.1992</li>
+                                <li>Nationality: Macedonian</li>
+                                <li>Address: Gjuro Salaj 10 b</li>
+                                <li>Email: zoran.gjuroski@gmail.com</li>
+                                <li>Skype: zokigjuro</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="resume-section-title">Professional profile</h3>
+                        <div class="resume-item">
+                            <p>
+                                Highly motivated, professional and ambitious software engineer with more than 3 years of experience in analysis,
+                                development and implementation of web and desktop applications. I possess the knowledge and training needed to
+                                help develop and maintain applications, and make improvements that will enhance functionality.
+                                I am proficient in working with Microsoft technologies as a full stack developer using ASP.NET MVC, Sql Server,
+                                Entity framework, WCF, WEB API, WPF, HTML, CSS, knockoutJs/angularJs, Bootstrap, and many other tools, framework, libraries.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="jobs" class="resume-section resume-section-bordered">
+                    <div class="col-md-3">
+                        <h3 class="resume-section-title">Work experience</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="resume-item">
+                            <p class="period"><span class="fa fa-calendar blue"></span> September 2016 - Now</p>
+                            <h3>
+                                <strong>Software engineer</strong>
+                            </h3>
+                            <h4>Allocate Software</h4>
+                            <p>
+                                Full stack development on various web and mobile company products
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="period"><span class="fa fa-calendar blue"></span> June 2015 - September 2016</p>
+                            <h3>
+                                <strong>Software engineer</strong>
+                            </h3>
+                            <h4>Re:Aktiv</h4>
+                            <p>
+                                Working on a generic registry platform which consists of multiple web applications,
+                                web services, plugins and third party tools integrated with services from another companies and applications.
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="period"><span class="fa fa-calendar blue"></span> July 2014 - June 2015</p>
+                            <h3>
+                                <strong>Junior software engineer</strong>
+                            </h3>
+                            <h4>Re:Aktiv</h4>
+                            <p>
+                                Full stack development of web applications using Microsoft technologies and
+                                various web frameworks and third party tools.
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="period"><span class="fa fa-calendar blue"></span> February 2014 - June 2016</p>
+                            <h3><strong>Freelancer</strong></h3>
+                            <p>
+                                Working freelance on various applications (mainly web) including several projects through upwork.com (CokeSAM, TheTowawayZone)
+                                <br />
+                                Working freelance on projects with other companies (Finance systems, e-Archive, SaraFashion online orders)
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="period"><span class="fa fa-calendar blue"></span> July 2013 - September 2013</p>
+                            <h3><strong>Intern</strong></h3>
+                            <h4>Netcetera</h4>
+                            <p>
+                                Working on a web application using Java technologies combined with various frameworks and third party tools.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="education" class="resume-section resume-section-bordered">
+                    <div class="col-md-3">
+                        <h3 class="resume-section-title">Education</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="resume-item">
+                            <p class="period"><span class="fa fa-calendar blue"></span> 2012 - 2013</p>
+                            <h3>
+                                <strong>Cisco Networking Academy</strong>
+                            </h3>
+                            <p>
+                                First and second degree certificates (Cisco Certified Network Associate 1 and Cisco Certified Network Associate 2).
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="period"><span class="fa fa-calendar blue"></span> 2010 - 2014</p>
+                            <h3>
+                                <strong>Faculty of Computer Science and Engineering, “Ss. Cyril and Methodius” University</strong>
+                            </h3>
+                            <p>
+                                Software Engineering 8.6 average grade. <br />
+                                Main faculty subjects: Algorithms, Data structures, Object-oriented programming, Databases, Web technologies, Intelligent systems, Information systems, Internet technologies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--<div id="languages" class="resume-section">
+                    <div class="col-md-3">
+                        <h3 class="resume-section-title">Languages</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="resume-item">
+                            <table class="table table-striped table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Language</th>
+                                        <th>Understanding</th>
+                                        <th>Speaking</th>
+                                        <th>Writing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>English</strong></td>
+                                        <td>C2</td>
+                                        <td>C2</td>
+                                        <td>C2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>French</strong></td>
+                                        <td>A2</td>
+                                        <td>A1</td>
+                                        <td>A1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>-->
+                <div id="skills" class="resume-section resume-section-bordered">
+                    <div class="col-md-3">
+                        <h3 class="resume-section-title">Personal skills</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="resume-item">
+                            <div class="bar-wrap tooltip-details" title="3,4,5,6,7,10,11,12,14,15,16">
+                                <h4 class="title">C#</h4>
+                                <div class="bar">
+                                    <div class="progress-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="bar-wrap tooltip-details" title="3,4,5,8,9,10,11,12,13,15">
+                                <h4 class="title">Javascript</h4>
+                                <div class="bar">
+                                    <div class="progress-bar" style="width: 87%;"></div>
+                                </div>
+                            </div>
+                            <div class="bar-wrap tooltip-details" title="3,4,5,8,9,10,11,12,15,16">
+                                <h4 class="title">ASP.NET MVC</h4>
+                                <div class="bar">
+                                    <div class="progress-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="bar-wrap tooltip-details" title="2,3,4,5,7,8,9,10,11,12,13,14,15,16">
+                                <h4 class="title">HTML</h4>
+                                <div class="bar">
+                                    <div class="progress-bar" style="width: 94%;"></div>
+                                </div>
+                            </div>
+                            <div class="bar-wrap tooltip-details" title="2,3,4,5,7,8,9,10,11,12,13,14,15,16">
+                                <h4 class="title">CSS</h4>
+                                <div class="bar">
+                                    <div class="progress-bar" style="width: 81%;"></div>
+                                </div>
+                            </div>
+                            <div class="bar-wrap tooltip-details" title='3,4,5,8,9,10,11,12,13'>
+                                <h4 class="title">jQuery</h4>
+                                <div class="bar">
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume-item">
+                            <h3>
+                                <strong>Other skills</strong>
+                            </h3>
+                            <div class="tag-items">
+                                <span class="tooltip-details" title='3,4,5,6,7,8,9,10,11,12,13,15'>SQL</span>
+                                <span class="tooltip-details" title=''>Microsoft SQL Server</span>
+                                <span class="tooltip-details" title='2,3,4,5,8,9,10,11,12,13,14,15,16'>Bootstrap</span>
+                                <span class="tooltip-details" title='8,10'>Dapper</span>
+                                <span class="tooltip-details" title='3,4,5,6,7,8,9,10,11,12,13,14,15,16'>Microsoft Visual Studio</span>
+                                <span class="tooltip-details" title='3,4,5,6,8,9,10,12'>Team foundation server</span>
+                                <span class="tooltip-details" title='2,7,11,13,14,15,16'>Git(+TortoiseGit)</span>
+                                <span class="tooltip-details" title='11,13,15'>AngularJS</span>
+                                <span class="tooltip-details" title='4,12'>KnockoutJS</span>
+                                <span class="tooltip-details" title='4,5,6,12,15'>Entity Framework</span>
+                                <span class="tooltip-details" title='3,4,5,6,8,9,10,11,12,13,14,15'>LINQ</span>
+                                <span class="tooltip-details" title='3,4,5,6,7,8,9,10,11,12,13,14,15,16'>ASP.NET</span>
+                                <span class="tooltip-details" title='1,3,5,8,9,10'>XML</span>
+                                <span class="tooltip-details" title='3,4,5,8,9,10,11,12,13,14,15'>AJAX</span>
+                                <span class="tooltip-details" title='4,9,12'>SignalR</span>
+                                <span class="tooltip-details" title='7'>ASP.NET Web API</span>
+                                <span class="tooltip-details" title='6'>WPF (Caliburn Micro)</span>
+                                <span class="tooltip-details" title='11,13,15'>NUnit</span>
+                                <span class="tooltip-details" title='1'>WebStorm</span>
+                                <span>Apache Cordova</span>
+                                <span>SVN</span>
+                                <span>Java</span>
+                                <span>LINQPad</span>
+                                <span>CefSharp</span>
+                            </div>
+                        </div>
+                        <p class="item-msg">
+                            <span class="fa fa-info-circle blue"></span> Hover on the skill to view list of projects where it is used in. <br />
+                            View the projects in detail in the <a class="blue" href="portfolio.html">projects page</a>
+                        </p>
+                        <p class="item-msg">.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--
+                <div id="other" class="resume-section">
+                    <div class="col-md-3">
+                        <h3 class="resume-section-title">Other</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="resume-item">
+                            <ul>
+                                <li>Team leadership skills: acquired through leading several team projects, writing and allocating project tasks to other team members (on Team Foundation Server), configuring projects and setting initial project architecture including variations of N-Tier architecture.</li>
+                                <li>Excellent ability to adapt to cultural environment</li>
+                                <li>Excellent communication skills, fast learning and pro-active</li>
+                                <li>Very dedicated to team work, loyal and organized - using tools for every type of work, hard working</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                -->
+            </div>
         </div>
+        <div id="dialog" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close proj-action prev"><i class="fa fa-arrow-left"></i></button>
+                        <button type="button" class="close proj-action exit" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+                        <button type="button" class="close proj-action next"><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                    <div class="modal-body">
 
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<span id="scrollTop" class="action-btn"><i class="fa fa-arrow-up"></i></span>
+<span id="download" class="action-btn" onclick="download()"><i class="fa fa-download"></i></span>
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c5bb3c04-6065-4382-a695-930a9a24935b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<script type="text/javascript" src="scripts/ui.js"></script>
+<script type="text/javascript" src="scripts/projects.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        init();
+
+        var html = '';
+        var $details = $(".tooltip-details[title != '']");
+        $details.each(function (elem) {
+            var $elem = $(this);
+            if($elem.attr('title')){
+                var ids = $elem.attr('title').split(',');
+                html += '<div class="tag-proj-wrap">';
+                for(var i in ids){
+                    var project = $.grep(projects, function(e){ return e.id == ids[i]; })[0];
+                    if(project.images.length == 0) project.img = 'images/project.png';
+                    html += '<div class="tag-proj"><div><img class="tag-proj-img" src="'+project.images[0]+'" /></div>';
+                    html += '<span class="tag-proj-desc">'+ project.name +'</span></div>';
+                    if((parseInt(i) + 1) % 4 == 0){
+                        html += '</div><div class="tag-proj-wrap">';
+                    }
+                }
+
+                html += '</div><div class="clearfix"></div>';
+                $elem.attr('title', html);
+                html = '';
+            }
+        });
+
+        $('.tooltip-details').tooltip({
+            placement: 'bottom',
+            html: 'true',
+            container: 'body'
+        });
+
+        $('.tooltip-details').on('show.bs.tooltip', function(){
+            $("#content").addClass('expanded');
+        });
+        $('.tooltip-details').on('hide.bs.tooltip', function(){
+            $("#content").removeClass('expanded');
+        });
+    });
+</script>
+</body>
+</html>
