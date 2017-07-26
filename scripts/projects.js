@@ -28,8 +28,8 @@ function initializeView(){
 
     $(".portfolio-item")
         .on('click', function () {
-            var id = $(this).data('projid');
-            openProjectDetails(id);
+            var order = $(this).data('order');
+            openProjectDetails(order);
         })
         .on('mouseover', function() {
             $(this).siblings().css({opacity: '0.5'});
@@ -47,7 +47,7 @@ function renderProjects(){
 
     for(var i in projects){
         var elem = projects[i];
-        projHtml += '<div class="portfolio-item filtered col-md-4 '+ elem.class +'" data-projid="'+ elem.id +'" data-groups='+ elem.groups +'> '+
+        projHtml += '<div class="portfolio-item filtered col-md-4 '+ elem.class +'" data-projid="'+ elem.id +'" data-order="'+elem.order+'" data-groups='+ elem.groups +'> '+
             '<a role="button"> '+
             '<div class="portfolio-image-wrapper">';
         if (elem.images.length) {
@@ -64,7 +64,7 @@ function renderProjects(){
 
         $projContainer.append(projHtml);
 
-        detailsHtml += '<div class="project" data-id="'+elem.id+'">';
+        detailsHtml += '<div class="project" data-id="'+elem.id+'" data-order="'+elem.order+'">';
 
         detailsHtml += '<div class="proj-wrap">'+
             '<h1 class="blue">' + elem.name +' <button type="button" class="close proj-action exit" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button></h1>'+
@@ -118,36 +118,8 @@ function renderProjects(){
 
 var projects = [
     {
-        id: 1,
-        groups: '["0", "3"]',
-        name: 'KnigW',
-        desc: ' Desktop application',
-        class: 'all desktop',
-        images: ['images/project.png'],
-        fulldesc: 'Making updates and enhancements in the code and the database tables of an existing system.'+
-        'Creating operations to communicate with FTP server and write/read/update files, and creating application module for generating XML reports for the companies which use the system (several company types).Visual Basic, XML.',
-        tags: ['Visual Basic', 'XML'],
-        url: null
-    },
-    {
-        id: 2,
-        groups: '["0", "1"]',
-        name: 'Markoskik73',
-        desc: ' Website',
-        class: 'all web',
-        images: [
-            "images/2/0.png",
-            "images/2/1.png",
-            "images/2/2.png",
-            "images/2/3.png"
-        ],
-        fulldesc: 'It represents a static website for the needs of the company MarkoskiK73 (civil engineering and constructions).'+
-        'The website is (mobile-first) responsive.',
-        tags: ['HTML', 'CSS', 'Bootstrap', 'PHP (contact)'],
-        url: null
-    },
-    {
         id: 3,
+        order: 1,
         groups: '["0", "2"]',
         name: 'SRIS',
         desc: ' Web application',
@@ -166,7 +138,27 @@ var projects = [
         url: 'https://sris.sec.gov.mk'
     },
     {
+        id: 12,
+        order: 2,
+        groups: '["0", "1"]',
+        name: 'TheTowawayZone',
+        desc: ' Web application',
+        class: 'all webd',
+        images: [
+            "images/12/0.png",
+            "images/12/3.png",
+            "images/12/4.png",
+            "images/12/5.png"
+        ],
+        fulldesc: 'Web application for towing companies that provides various features for vehicle impound activities including:'+
+        'vehicle impound, calculating fees for impounded vehicle, vehicle reports, user and role management, managing'+
+        'vehicles on sale, progress bar and deadline calculator feature for impounded vehicles.',
+        tags: ['C#', 'ASP.NET MVC', 'Entity Framework', 'KnockoutJS', 'SignalR', 'Bootstrap', 'HTML', 'CSS', 'jQuery'],
+        url: 'http://thetowawayzone.com/public'
+    },
+    {
         id: 4,
+        order: 3,
         groups: '["0", "2"]',
         name: 'DenDiet',
         desc: ' Web application',
@@ -186,54 +178,48 @@ var projects = [
         url: 'http://www.dendiet.com/'
     },
     {
-        id: 5,
-        groups: '["0", "3"]',
-        name: 'Electronic Services Framework',
+        id: 9,
+        order: 4,
+        groups: '["0", "2"]',
+        name: 'ePermit Serbia',
         desc: ' Web application',
         class: 'all webd',
         images: [
-            "images/5/0.png",
-            "images/5/1.png",
-            "images/5/2.png",
+            "images/9/0.png",
+            "images/9/1.png",
+            "images/9/2.png",
+            "images/9/3.png",
+            "images/9/4.png",
+            "images/9/5.png",
+            "images/9/6.png",
+            "images/9/9.png",
         ],
-        fulldesc: 'Framework for electronic services, designed to provide the end users configured catalogs with services,'+
-        'and administration which includes content management and report generation.',
-        tags: ['ASP.NET MVC', 'ASP.NET WebForms', 'HTML', 'CSS', 'Bootstrap', 'Entity framework'],
-        url: null
+        fulldesc: '[CRP instance]. System for issuing construction permits in Serbia. '+
+        'It includes all needed processes for construction: submitting application for location conditions,'+
+        'obtaining all kinds of permits from the needed institutions, approval of works, etc.',
+        url: 'https://ceop.apr.gov.rs/eregistrationportal/'
     },
     {
-        id: 6,
+        id: 11,
+        order: 5,
         groups: '["0", "2"]',
-        name: 'Electronic Archive',
-        desc: ' Desktop application',
-        class: 'all desktop',
-        images: [
-            "images/6/0.png",
-            "images/6/1.png",
-            "images/6/2.png",
-        ],
-        fulldesc: 'e-Archive is a system that is used for archiving documents. It represents a desktop '+
-        'application created with Windows Presentation Foundation (WPF) that allows the archivist to manage companies that have their own separate archives. The application is created following the principles and laws on archiving imposed by the Government of Macedonia.',
-        tags: ['C#', 'WPF', 'Caliburn Micro', 'ADO.NET'],
-        url: null
-    },
-    {
-        id: 7,
-        groups: '["0", "2"]',
-        img: null,
-        name: 'Coke SAM',
-        desc: ' Web API',
+        name: 'Sara fashion eOrders',
+        desc: ' Web application',
         class: 'all webd',
         images: [
-            "images/project.png"
+            "images/11/0.png",
+            "images/11/1.png",
+            "images/11/2.png",
+            "images/11/3.png"
         ],
-        fulldesc: 'Project that includes two parts: web API that is used through mobile devices for sharing '+
-        'coupons and messages for McDonald’s meals, and an administration portal for user/coupon/messages/files management.',
-        tags: ['C#', 'ASP.NET Web API', 'Entity Framework'],
-        url: null
+        fulldesc: 'e-Commerce web application for electronic orders created with Microsoft technologies. '+
+        'Includes filling shopping cart with products from various categories and creating orders with articles.',
+        tags: ['C#', 'ASP.NET MVC', 'ADO.NET', 'HTML', 'CSS', 'Bootstrap'],
+        url: 'http://194.61.58.146:888/webnaracki/'
     },
     {
         id: 8,
+        order: 6,
         groups: '["0", "2"]',
         name: '[CRP] - Configuration portal',
         desc: ' Web application',
@@ -258,28 +244,8 @@ var projects = [
         url: null
     },
     {
-        id: 9,
-        groups: '["0", "2"]',
-        name: 'ePermit Serbia',
-        desc: ' Web application',
-        class: 'all webd',
-        images: [
-            "images/9/0.png",
-            "images/9/1.png",
-            "images/9/2.png",
-            "images/9/3.png",
-            "images/9/4.png",
-            "images/9/5.png",
-            "images/9/6.png",
-            "images/9/9.png",
-        ],
-        fulldesc: '[CRP instance]. System for issuing construction permits in Serbia. '+
-        'It includes all needed processes for construction: submitting application for location conditions,'+
-        'obtaining all kinds of permits from the needed institutions, approval of works, etc.',
-        url: 'https://ceop.apr.gov.rs/eregistrationportal/'
-    },
-    {
         id: 10,
+        order: 7,
         groups: '["0", "2"]',
         name: '[CRP] - Support tool',
         desc: ' Web application',
@@ -303,42 +269,43 @@ var projects = [
         url: null
     },
     {
-        id: 11,
+        id: 6,
+        order: 8,
         groups: '["0", "2"]',
-        name: 'Sara fashion eOrders',
-        desc: ' Web application',
-        class: 'all webd',
+        name: 'Electronic Archive',
+        desc: ' Desktop application',
+        class: 'all desktop',
         images: [
-            "images/11/0.png",
-            "images/11/1.png",
-            "images/11/2.png",
-            "images/11/3.png"
+            "images/6/0.png",
+            "images/6/1.png",
+            "images/6/2.png",
         ],
-        fulldesc: 'e-Commerce web application for electronic orders created with Microsoft technologies. '+
-        'Includes filling shopping cart with products from various categories and creating orders with articles.',
-        tags: ['C#', 'ASP.NET MVC', 'ADO.NET', 'HTML', 'CSS', 'Bootstrap'],
-        url: 'http://194.61.58.146:888/webnaracki/'
+        fulldesc: 'e-Archive is a system that is used for archiving documents. It represents a desktop '+
+        'application created with Windows Presentation Foundation (WPF) that allows the archivist to manage companies that have their own separate archives. The application is created following the principles and laws on archiving imposed by the Government of Macedonia.',
+        tags: ['C#', 'WPF', 'Caliburn Micro', 'ADO.NET'],
+        url: null
     },
     {
-        id: 12,
+        id: 2,
+        order: 9,
         groups: '["0", "1"]',
-        name: 'TheTowawayZone',
-        desc: ' Web application',
-        class: 'all webd',
+        name: 'Markoskik73',
+        desc: ' Website',
+        class: 'all web',
         images: [
-            "images/12/0.png",
-            "images/12/3.png",
-            "images/12/4.png",
-            "images/12/5.png"
+            "images/2/0.png",
+            "images/2/1.png",
+            "images/2/2.png",
+            "images/2/3.png"
         ],
-        fulldesc: 'Web application for towing companies that provides various features for vehicle impound activities including:'+
-        'vehicle impound, calculating fees for impounded vehicle, vehicle reports, user and role management, managing'+
-        'vehicles on sale, progress bar and deadline calculator feature for impounded vehicles.',
-        tags: ['C#', 'ASP.NET MVC', 'Entity Framework', 'KnockoutJS', 'SignalR', 'Bootstrap', 'HTML', 'CSS', 'jQuery'],
-        url: 'http://thetowawayzone.com/public'
+        fulldesc: 'It represents a static website for the needs of the company MarkoskiK73 (civil engineering and constructions).'+
+        'The website is (mobile-first) responsive.',
+        tags: ['HTML', 'CSS', 'Bootstrap', 'PHP (contact)'],
+        url: null
     },
     {
         id: 13,
+        order: 10,
         groups: '["0", "2"]',
         name: 'AtomeM',
         desc: ' Web application',
@@ -352,7 +319,25 @@ var projects = [
         url: 'http://shop.atomem.mk'
     },
     {
+        id: 5,
+        order: 11,
+        groups: '["0", "3"]',
+        name: 'Electronic Services Framework',
+        desc: ' Web application',
+        class: 'all webd',
+        images: [
+            "images/5/0.png",
+            "images/5/1.png",
+            "images/5/2.png",
+        ],
+        fulldesc: 'Framework for electronic services, designed to provide the end users configured catalogs with services,'+
+        'and administration which includes content management and report generation.',
+        tags: ['ASP.NET MVC', 'ASP.NET WebForms', 'HTML', 'CSS', 'Bootstrap', 'Entity framework'],
+        url: null
+    },
+    {
         id: 14,
+        order: 12,
         groups: '["0", "2"]',
         name: 'HTMLGeneratorAPI',
         desc: ' C# Library',
@@ -366,6 +351,7 @@ var projects = [
     },
     {
         id: 15,
+        order: 13,
         groups: '["0", "2", "3"]',
         name: 'Organizer',
         desc: ' Web & desktop application',
@@ -382,7 +368,24 @@ var projects = [
         url: 'http://shop.atomem.mk'
     },
     {
+        id: 7,
+        order: 14,
+        groups: '["0", "2"]',
+        img: null,
+        name: 'Coke SAM',
+        desc: ' Web API',
+        class: 'all webd',
+        images: [
+            "images/project.png"
+        ],
+        fulldesc: 'Project that includes two parts: web API that is used through mobile devices for sharing '+
+        'coupons and messages for McDonald’s meals, and an administration portal for user/coupon/messages/files management.',
+        tags: ['C#', 'ASP.NET Web API', 'Entity Framework'],
+        url: null
+    },
+    {
         id: 16,
+        order: 15,
         groups: '["0", "2", "4"]',
         name: 'Snippets',
         desc: ' Web application',
@@ -393,5 +396,18 @@ var projects = [
         fulldesc: 'an application which can recognize programming language and other useful information for code snippets using some Machine Learning techniques and algorithms. The application is able to learn and to improve the accuracy in recognizing the code snippets while processing them. Then, the application can manage the snippets repository and use it for various integrations.',
         tags: ['C#', "Naive Bayes", 'Support Vector Machine', 'ASP.NET MVC', 'HTML', 'CSS', 'Bootstrap'],
         url: 'https://github.com/ZoranGj/snippets'
+    },
+    {
+        id: 1,
+        order: 16,
+        groups: '["0", "3"]',
+        name: 'KnigW',
+        desc: ' Desktop application',
+        class: 'all desktop',
+        images: ['images/project.png'],
+        fulldesc: 'Making updates and enhancements in the code and the database tables of an existing system.'+
+        'Creating operations to communicate with FTP server and write/read/update files, and creating application module for generating XML reports for the companies which use the system (several company types).Visual Basic, XML.',
+        tags: ['Visual Basic', 'XML'],
+        url: null
     },
 ];

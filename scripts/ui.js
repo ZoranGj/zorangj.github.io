@@ -1,17 +1,17 @@
-﻿function openProjectDetails(projId) {
-    if (!projId) {
+﻿function openProjectDetails(order) {
+    if (!order) {
         return false;
     }
 
-    bindActions(projId);
+    bindActions(order);
 
     if (!$("#dialog").hasClass('in')) {
         $("#dialog").modal();
     }
 }
 
-function bindActions(projId) {
-    var $project = $(".project[data-id='" + projId + "']");
+function bindActions(order) {
+    var $project = $(".project[data-order='" + order + "']");
     $("#dialog .modal-body").html($project.html());
 
     var hasPrevious = $project.prev('.project').length > 0;
@@ -19,7 +19,7 @@ function bindActions(projId) {
 
     if (hasPrevious) {
         $(".proj-action.prev").click(function () {
-            bindActions(projId - 1);
+            bindActions(order - 1);
         }).show();
     } else {
         $(".proj-action.prev").unbind('click').hide();
@@ -27,7 +27,7 @@ function bindActions(projId) {
 
     if (hasNext) {
         $(".proj-action.next").click(function () {
-            bindActions(projId + 1);
+            bindActions(order + 1);
         }).show();
     } else {
         $(".proj-action.next").unbind('click').hide();
