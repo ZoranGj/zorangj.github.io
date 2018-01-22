@@ -157,7 +157,7 @@ a {
         padding-top: 10px;
     }
     .resume-item:not(:last-of-type) {
-        padding-bottom: 5px;
+        padding-bottom: 6x;
         border-bottom: 1px solid #f2f2f2;
     }
     .resume-item h3 {
