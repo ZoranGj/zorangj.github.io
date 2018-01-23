@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b3fae32-6e8a-4600-ac29-5d2dcbdf03d0" name="Default" comment="Updated portfolio and experience.">
+    <list default="true" id="5b3fae32-6e8a-4600-ac29-5d2dcbdf03d0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -338,7 +338,7 @@
       <workItem from="1500496976027" duration="1501000" />
       <workItem from="1500931732131" duration="753000" />
       <workItem from="1501101925396" duration="1701000" />
-      <workItem from="1516664768059" duration="1647000" />
+      <workItem from="1516664768059" duration="1676000" />
     </task>
     <task id="LOCAL-00001" summary="Updated portfolio and experience.">
       <created>1516666339595</created>
@@ -347,11 +347,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516666339595</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Workspace xml update.">
+      <created>1516666442525</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1516666442525</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93605000" />
+    <option name="totallyTimeSpent" value="93634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -384,7 +391,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated portfolio and experience." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated portfolio and experience." />
+    <MESSAGE value="Workspace xml update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Workspace xml update." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
