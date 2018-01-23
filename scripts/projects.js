@@ -168,7 +168,7 @@ var projects = [
         ],
         fulldesc: 'A finance solution for invoice factoring.',
         tags: ['ASP.NET Core', 'EF Core', 'Angular', 'HTML', 'CSS', 'Bootstrap', 'xUnit'],
-        url: 'https://sris.sec.gov.mk'
+        url: null
     },
     {
         id: 4,
@@ -379,7 +379,7 @@ var projects = [
         ],
         fulldesc: 'The solution offers desktop and web client which helps you track and improve your productivity.',
         tags: ['C#', 'ASP.NET MVC', 'ADO.NET', 'HTML', 'CSS', 'Bootstrap'],
-        url: 'http://shop.atomem.mk'
+        url: 'https://github.com/ZoranGj/organizer'
     },
     {
         id: 7,
