@@ -151,13 +151,13 @@ a {
     }
 
 .resume-item {
-    overflow: auto;
+    /*overflow: auto;*/
 }
     .resume-item:not(:first-of-type) {
         padding-top: 10px;
     }
     .resume-item:not(:last-of-type) {
-        padding-bottom: 6x;
+        padding-bottom: 6px;
         border-bottom: 1px solid #f2f2f2;
     }
     .resume-item h3 {

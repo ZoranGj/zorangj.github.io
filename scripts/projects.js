@@ -157,6 +157,20 @@ var projects = [
         url: 'http://thetowawayzone.com/public'
     },
     {
+        id: 17,
+        order: 3,
+        groups: '["0", "3"]',
+        name: 'Factoring',
+        desc: ' Web application',
+        class: 'all webd',
+        images: [
+            "images/17/1.png"
+        ],
+        fulldesc: 'A finance solution for invoice factoring.',
+        tags: ['ASP.NET Core', 'EF Core', 'Angular', 'HTML', 'CSS', 'Bootstrap', 'xUnit'],
+        url: 'https://sris.sec.gov.mk'
+    },
+    {
         id: 4,
         order: 3,
         groups: '["0", "2"]',
@@ -409,5 +423,5 @@ var projects = [
         'Creating operations to communicate with FTP server and write/read/update files, and creating application module for generating XML reports for the companies which use the system (several company types).Visual Basic, XML.',
         tags: ['Visual Basic', 'XML'],
         url: null
-    },
+    }
 ];
