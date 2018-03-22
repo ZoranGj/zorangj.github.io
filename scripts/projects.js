@@ -157,20 +157,6 @@ var projects = [
         url: 'http://thetowawayzone.com/public'
     },
     {
-        id: 17,
-        order: 3,
-        groups: '["0", "3"]',
-        name: 'Factoring',
-        desc: ' Web application',
-        class: 'all webd',
-        images: [
-            "images/17/1.png"
-        ],
-        fulldesc: 'A finance solution for invoice factoring.',
-        tags: ['ASP.NET Core', 'EF Core', 'Angular', 'HTML', 'CSS', 'Bootstrap', 'xUnit'],
-        url: null
-    },
-    {
         id: 4,
         order: 3,
         groups: '["0", "2"]',
