@@ -333,7 +333,11 @@
                 html += '<div class="tag-proj-wrap">';
                 for(var i in ids){
                     var project = $.grep(projects, function(e){ return e.id == ids[i]; })[0];
-                    if(project.images.length == 0) project.img = 'images/project.png';
+                    if(!project){
+                        continue;
+                    }
+
+                    if(project.images && project.images.length == 0) project.img = 'images/project.png';
                     html += '<div class="tag-proj"><div><img class="tag-proj-img" src="'+project.images[0]+'" /></div>';
                     html += '<span class="tag-proj-desc">'+ project.name +'</span></div>';
                     if((parseInt(i) + 1) % 4 == 0){

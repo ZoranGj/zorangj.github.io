@@ -137,25 +137,25 @@ var projects = [
         tags: ['ASP.NET MVC', 'HTML', 'CSS', 'Bootstrap', 'jQuery', 'WCF'],
         url: 'https://sris.sec.gov.mk'
     },
-    {
-        id: 12,
-        order: 2,
-        groups: '["0", "1"]',
-        name: 'TheTowawayZone',
-        desc: ' Web application',
-        class: 'all webd',
-        images: [
-            "images/12/0.png",
-            "images/12/3.png",
-            "images/12/4.png",
-            "images/12/5.png"
-        ],
-        fulldesc: 'Web application for towing companies that provides various features for vehicle impound activities including:'+
-        'vehicle impound, calculating fees for impounded vehicle, vehicle reports, user and role management, managing'+
-        'vehicles on sale, progress bar and deadline calculator feature for impounded vehicles.',
-        tags: ['C#', 'ASP.NET MVC', 'Entity Framework', 'KnockoutJS', 'SignalR', 'Bootstrap', 'HTML', 'CSS', 'jQuery'],
-        url: 'http://thetowawayzone.com/public'
-    },
+    // {
+    //     id: 12,
+    //     order: 2,
+    //     groups: '["0", "1"]',
+    //     name: 'TheTowawayZone',
+    //     desc: ' Web application',
+    //     class: 'all webd',
+    //     images: [
+    //         "images/12/0.png",
+    //         "images/12/3.png",
+    //         "images/12/4.png",
+    //         "images/12/5.png"
+    //     ],
+    //     fulldesc: 'Web application for towing companies that provides various features for vehicle impound activities including:'+
+    //     'vehicle impound, calculating fees for impounded vehicle, vehicle reports, user and role management, managing'+
+    //     'vehicles on sale, progress bar and deadline calculator feature for impounded vehicles.',
+    //     tags: ['C#', 'ASP.NET MVC', 'Entity Framework', 'KnockoutJS', 'SignalR', 'Bootstrap', 'HTML', 'CSS', 'jQuery'],
+    //     url: 'http://thetowawayzone.com/public'
+    // },
     {
         id: 4,
         order: 3,
